@@ -3,7 +3,6 @@ title: "ILUGC Monthly Meet January 10 2015"
 author: Gowtham Raam
 url: /ilugc-monthly-meet-january-10-2015
 date: 2015-01-08T15:14:36+00:00
-draft: true
 ---
 
 Indian Linux Users Group, Chennai [ ILUGC ] is spreading awareness on
