@@ -1,7 +1,7 @@
 ---
-title: "ILUGC Monthly Meet January 10 2015"
+title: "Monthly Meet January 10 2015"
 author: Gowtham Raam
-url: /ilugc-monthly-meet-january-10-2015
+url: /monthly-meet-january-10-2015
 date: 2015-01-08T15:14:36+00:00
 ---
 
@@ -10,7 +10,7 @@ Free Open Source Software in Chennai since Jan 1998. We meet regularly
 on every month second Saturday with technical talks and discussions on
 various Free software.
 
-Check our website http://ilugc.in for further details.
+Check our website http://ilugc.org.in for further details.
 
 Join our mailing list at http://www.ae.iitm.ac.in/mailman/listinfo/ilugc
 
