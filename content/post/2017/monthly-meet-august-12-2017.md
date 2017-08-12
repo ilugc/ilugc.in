@@ -5,7 +5,7 @@ url: /monthly-meet-august-12-2017
 author: "Srinivasan Rangarajan"
 ---
 
-The next monthly meet is scheduled on Saturday, March 12th 2016 at 1500 IST.
+The next monthly meet is scheduled on Saturday, August 12th 2017 at 1500 IST.
 
 Venue: Classroom No 1,
        Aerospace Engineering,
