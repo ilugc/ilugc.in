@@ -1,7 +1,7 @@
 ---
 title: "Monthly Meet July 8 2017"
 date: 2017-07-06T13:10:43+05:30
-draft: true
+url: /monthly-meet-july-8-2017
 ---
 
 
