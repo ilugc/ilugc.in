@@ -1,7 +1,7 @@
 ---
 title: "August Monthly Meet August 12 2017"
 date: 2017-08-12T11:56:38+05:30
-url: /ilugc-monthly-meet-august-12-2017
+url: /monthly-meet-august-12-2017
 author: "Srinivasan Rangarajan"
 ---
 
