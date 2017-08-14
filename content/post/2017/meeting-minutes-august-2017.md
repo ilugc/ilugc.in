@@ -27,6 +27,6 @@ Links to explore:
 * [GoHugo](http://gohugo.io/)
 * [Getting Started with Hugo](http://gohugo.io/getting-started/)
 
-After the talk, we went to the Canteen. There we discussed about new and emerging technologies. Then Shakthi Kannan talked about the importance of Blogging often and he suggested to read the book "On Writing" by Stephen King. Then Sakthi and Shrini answered all the questions and queries of the participants. They cleared all the doubts regarding to the technologies and F/OSS. The session went really well.
+After the talk, we went to the Canteen. There we discussed about new and emerging technologies. Then Shakthi Kannan talked about the importance of Blogging often and he suggested to read the book "On Writing" by Stephen King. Then Sakthi and Srini answered all the questions and queries of the participants. They cleared all the doubts regarding to the technologies and F/OSS. The session went really well.
 
 Thanks to all the participants and speakers. 
