@@ -5,6 +5,7 @@ paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+enableRobotsTXT = true
 
 [Params]
     subtitle = "Indian Linux Users' Group - Chennai" # Subtitle of your site
