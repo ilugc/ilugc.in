@@ -12,7 +12,7 @@ various Free software.
 
 Check our website http://ilugc.org.in for further details.
 
-Join our mailing list at http://www.ae.iitm.ac.in/mailman/listinfo/ilugc
+Join our mailing list at https://www.freelists.org/list/ilugc
 
 We have our Meet on January 10, 2014
 
