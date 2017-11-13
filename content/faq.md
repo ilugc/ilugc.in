@@ -28,7 +28,7 @@ We generally meet at IIT Madras. The Meetings are held on every month 2nd Saturd
 
 Before joining in the mailing list, you must read the mailing list guidelines and visit the Archives.
 
-The ILUGC mailing list is being currently hosted at the Aerospace Dept, IIT-Madras. Click here to JOIN.
+The ILUGC mailing list is being currently hosted at the Aerospace Dept, IIT-Madras. Click here to [JOIN](https://freelists.org/list/ilugc).
 
 Every day, you may get 10 to 50 mails in your mail box. If you don’t have the habit of reading mail regularly, we will recommend you to read our archives instead of joining in the list.
 
