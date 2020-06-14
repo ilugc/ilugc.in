@@ -1,4 +1,4 @@
-baseURL = "https://ilugc.org.in/"
+baseURL = "https://ilugc.in/"
 languageCode = "en-us"
 title = "ILUGC"
 paginate = "10" # Number of posts per page
