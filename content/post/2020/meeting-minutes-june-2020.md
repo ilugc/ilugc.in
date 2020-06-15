@@ -46,4 +46,6 @@ https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-w
 
 Due to lack of time, presentation about ed is postponed. It will be organized as a separate talk the coming weeks.
 
-#### IRC Logs: https://gist.github.com/mohan43u/795018fe19b35e41ee105a859aac308d
+#### IRC Logs
+
+{{<gist mohan43u 795018fe19b35e41ee105a859aac308d>}}
