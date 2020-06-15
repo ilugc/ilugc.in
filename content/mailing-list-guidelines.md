@@ -1,27 +1,26 @@
 ---
 title: "Mailing List Guidelines"
+url: /mailing-list-guidelines
 date: 2017-08-12T00:32:38+05:30
-draft: true
 ---
 
-1. English is the medium of communication in this mailing list, so use
-only english in the mailing list. For people wanting to expressing
-themselves in Tamil, ILUGC's Tamil mailing list exist. For joining [ILUGC Tamil](http://www.ae.iitm.ac.in/mailman/listinfo/ilugc.tamil).
+1. English is the medium of communication in this mailing list, so use only english in the mailing list. For people wanting to expressing themselves in Tamil, ILUGC's Tamil mailing list exist. For joining [ILUGC Tamil](http://www.ae.iitm.ac.in/mailman/listinfo/ilugc.tamil).
 2. Use a proper subject line.
 3. Do not [troll](http://en.wikipedia.org/wiki/Internet_troll) in the mailing list.
 4. Use [OT] for off-topic, non-technical discussions. But, don't misuse this to start flame wars or to troll in the mailing list.
-5. Do not [top-post](http://en.wikipedia.org/wiki/Top-posting):
-Because it messes up the order in which people normally read text.
-Example of a top-post:
-<pre>
-    > > Why is top-posting
-    > > such a bad thing?
-    Top-posting.
-    > > What is the most
-    > > annoying thing in e-mail?
-</pre>
+5. Do not [top-post](http://en.wikipedia.org/wiki/Top-posting), Because it messes up the order in which people normally read text. Here is an Example of a top-post,
+```
+    Hi,
+    I'm Top-posting here
+    thanks,
+    Foo.B.
+    > Why is top-posting
+    > such a bad thing?
+    > What is the most
+    > annoying thing in e-mail?
+```
 Use interleaved, trimmed posting
-<pre>
+```
     Hi,
     --- Foo Bar wrote:
     > could design good
@@ -32,23 +31,24 @@ Use interleaved, trimmed posting
     http://irtfweb.ifa.hawaii.edu/observing/applicationForms.php
     --
     Bar Foo
-</pre>
+```
 6. Do not over-quote:
 Example of an over-quote:
-<pre>
+```
+>>>> On Thursday you said
+>>>> ooh ooh ooh
 >>> On Friday you said
 >>> blah blah blah
 >> On Saturday you said
 >> foo foo foo
 > On Sunday you said
 > foobar
-</pre>
+```
 7. Do not post HTML messages
 8. Do not recycle messages
 9. Do not send attachments
 10. Do not attach obnoxious, nonsensical legal disclaimers. If your company uses disclaimers, don't use your company ID for the mailing list.
-11. Do not reply to a digest. (If you are in digest mode and want to reply to a post use [ILUGC Gmane blog
-interface](http://blog.gmane.org/gmane.org.user-groups.linux.ilugc).
+11. Do not reply to a digest. (If you are in digest mode and want to reply to a post use [ILUGC Gmane blog interface](http://blog.gmane.org/gmane.org.user-groups.linux.ilugc).
 12. Search for answers for your questions/problems in any search engine before posting your query to the mailing list.
 13. Do not post messages in all capital letters. Mails in CAPS is considered rude and is similar to shouting during a conversation.
 14. Following these guidelines could be helpful - http://people.debian.org/~enrico/dcg/
@@ -58,9 +58,3 @@ interface](http://blog.gmane.org/gmane.org.user-groups.linux.ilugc).
 We must use the above guidelines to maintain better
 readability, proper archives, efficient bandwidth
 usage, etc.
-
-If any of the above are not clear to you, Please read
-the detailed list guidelines:
-
-Link:
-http://www.catb.org/~esr/faqs/smart-questions.html

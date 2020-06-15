@@ -6,7 +6,7 @@ aliases:
   - /contact-us
 ---
 
-Best way to contact the ILUGC Member is through the ILUGC Mailing List. If you are not an member of ILUGC mailing list, then you can contact the co-ordinator for specific help.
+Best way to contact the ILUGC Member is through the [ILUGC Mailing List](https://www.freelists.org/list/ilugc). If you are not an member of ILUGC mailing list, then you can contact the co-ordinator for specific help.
 
 ## Talk/Seminar/Workshop
 
