@@ -19,7 +19,7 @@ enableRobotsTXT = true
 [Params.sidebar]
   home = "right"
   list = "right"
-  single = "right"
+  single = false
   # Enable widgets in given order
   widgets = ["search", "recent"]
 
