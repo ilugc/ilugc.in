@@ -1,6 +1,6 @@
 ---
 title: "sh - Posix Shell - 5 Day Session - July 6, 2020 to July 10, 2020 (Through https://training.ilugc.in)"
-url: /sh-posix-shell-session-july-2020.md
+url: /sh-posix-shell-session-july-2020
 date: 2020-07-04T16:22:36+05:30
 author: Mohan R
 ---

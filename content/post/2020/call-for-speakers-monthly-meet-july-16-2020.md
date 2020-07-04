@@ -1,6 +1,6 @@
 ---
 title: "Call for Speakers - ILUGC Meet - July 2020 - Lets meet on IRC (#ilugc in freenode.net)"
-url: /call-for-speakers-monthly-meet-july-16-2020.md
+url: /call-for-speakers-monthly-meet-july-16-2020
 date: 2020-07-04T16:20:57+05:30
 author: Mohan R
 ---

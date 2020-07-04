@@ -1,6 +1,6 @@
 ---
 title: "sh - Posix Shell - 5 Day Session - July 6, 2020 to July 10, 2020 (Through https://training.ilugc.in)"
-url: /best-practices-to-conduct-online-meet.md
+url: /best-practices-to-conduct-online-meet
 date: 2020-07-04T16:34:09+05:30
 author: Mohan R
 ---
