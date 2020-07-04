@@ -1,6 +1,6 @@
 ---
 title: "Tamil Open Source Conference Online - July 3-4 2020"
-url: /tamil-open-source-conference-july-2020.md
+url: /tamil-open-source-conference-july-2020
 date: 2020-07-04T16:28:02+05:30
 author: Shrinivasan T
 ---
