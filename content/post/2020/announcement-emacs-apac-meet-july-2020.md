@@ -7,7 +7,7 @@ author: Mohan R
 
 Announcing call for speakers for Emacs APAC (Asia Pacific) virtual meetup on #emacs (irc.freenode.net) and Jitsi scheduled for Saturday, July 25, 2020 (1400-1500 IST).
 
-If you would like to give a demo or talk (maximum 20 minutes) on GNU Emacs or any variant, please reply to me (and *not* to the list) or ping me (*"mbuf"*) on Freenode with your talk details:
+If you would like to give a demo or talk (maximum 20 minutes) on GNU Emacs or any variant, please ping me (*"mbuf"*) on Freenode with your talk details:
 
 * Topic
 * Description
