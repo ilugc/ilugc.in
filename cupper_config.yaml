@@ -1,0 +1,86 @@
+baseURL: https://ilugc.in
+languageCode: en-us
+defaultContentLanguage: en
+title: ILUGC
+theme: cupper-hugo-theme
+googleAnalytics: UA-123456789-1
+disqusShortname: yourdiscussshortname
+enableGitInfo: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 99
+
+params:
+  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
+  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat: Jan 2, 2006
+  codePenUser: someUser
+  katex: true
+  darkThemeAsDefault: false
+  hideHeaderLinks: false
+  search: true
+  # A list of custom css files can be provided, which must be placed inside
+  # 'static/'.
+  # This is useful to override just specific css classes, instead of copying
+  # the entire theme's css file to your own site.
+  # Usage:
+  # customCss:
+  #   - css/foo.css # relative path starting from static/
+  #- css/bar.css
+
+menu:
+  nav:
+    - name: About
+      url: /about/
+      weight: 10
+    - name: Getting Started
+      url: /getting-started/
+      weight: 20
+    - name: FAQ
+      url: /faq/
+      weight: 30
+    - name: Contact
+      url: /contact/
+      weight: 40
+    - name: Get Involved
+      url: /get-involved/
+      weight: 50
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
