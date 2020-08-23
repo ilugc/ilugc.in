@@ -1,5 +1,5 @@
 ---
-title: "Talk: Ed - The Text Editor - June 16, 2020 - 16:00 IST - (through https://training.ilugc.in)"
+title: "Talk: Ed - The Text Editor - June 16, 2020 - 16:00 IST - (through https://meet.ilugc.in)"
 url: /announcement-talk-ed-june-16-2020
 date: 2020-06-15T23:40:09+05:30
 author: Mohan R
@@ -15,6 +15,6 @@ monthly meet. ILUGC will be conducting this talk again.
 * About Speaker: Just another FOSS Enthusiast.
 
 Steps to Join the talk:
-1. Click https://training.ilugc.in
+1. Click https://meet.ilugc.in
 2. Provide a name in "Nick" field representing you under "IRC Chat Window" and click "Start" button
 3. That's all. You will be logged into #ilugc channel in Freenode IRC Network.

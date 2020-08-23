@@ -1,5 +1,5 @@
 ---
-title: "sh - Posix Shell - 5 Day Session - July 6, 2020 to July 10, 2020 (Through https://training.ilugc.in)"
+title: "sh - Posix Shell - 5 Day Session - July 6, 2020 to July 10, 2020 (Through https://meet.ilugc.in)"
 url: /sh-posix-shell-session-july-2020
 date: 2020-07-04T16:22:36+05:30
 author: Mohan R
@@ -8,7 +8,7 @@ author: Mohan R
 *Date(s)*: **From July 06, 2020 to July 10, 2020**\
 *Time*: **Evening 5.00 PM**\
 *Duration*: **1 Hour**\
-*Place*: *https://training.ilugc.in*
+*Place*: *https://meet.ilugc.in*
 
 Let's get into the basics of [Posix 'sh' Shell](https://man7.org/linux/man-pages/man1/sh.1p.html). Here are the Topics we
 will be covering

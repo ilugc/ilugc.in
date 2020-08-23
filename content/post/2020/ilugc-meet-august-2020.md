@@ -21,7 +21,7 @@ IST**.
 
 **IRC Server**: chat.freenode.net\
 **Channel**: #ilugc\
-**Web IRC**: https://training.ilugc.in
+**Web IRC**: https://meet.ilugc.in
 
 ### Simple Meeting Guidelines
 
