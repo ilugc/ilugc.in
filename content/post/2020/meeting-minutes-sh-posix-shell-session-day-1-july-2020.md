@@ -5,7 +5,7 @@ url: /meeting-minutes-sh-posix-shell-session-day-1-july-2020
 author: Mohan R
 ---
 
-Starting of the meet was a perfect storm. After much struggle we were able to bring back control to #ilugc irc channel and was able to start the presentation through presenter terminal in training.ilugc.in. Here are the topics we covered in this session
+Starting of the meet was a perfect storm. After much struggle we were able to bring back control to #ilugc irc channel and was able to start the presentation through presenter terminal in meet.ilugc.in. Here are the topics we covered in this session
 
 * importance of pwd command, current working directory
 * overview of unix filesystem, directories files

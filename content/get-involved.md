@@ -5,20 +5,6 @@ date: 2020-06-15T18:08:09+05:30
 author: Mohan R
 ---
 
-## Official IRC channel
-
-People from ILUGC community hang in **#ilugc** channel on **[Freenode IRC network](https://en.wikipedia.org/wiki/Freenode)**. You can chat with them to clear your queries/doubts or you can help others with your knowledge. Read more about IRC [HERE](https://fedoramagazine.org/beginners-guide-irc/)
-
-| Channel                             | IRC Network Address |
-| :---------------------------------- | :------------------ |
-| [#ilugc](https://training.ilugc.in) | chat.freenode.net |
-
-## Conducting IRC Meeting or Training
-
-You can conduct IRC based meeting or training using ILUGC's training server. Send a mail to [ILUGC mailing-list](https://www.freelists.org/list/ilugc) with your purpose, and people can help you organize your meeting or training through following URL
-
-URL: https://training.ilugc.in
-
 ## Contributing to ilugc.in
 
 You can contribute to [ilugc.in](https://ilugc.in) website by writing Blog posts in [MarkDown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). These are the steps to follow to write Blog Post,
