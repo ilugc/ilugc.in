@@ -17,9 +17,9 @@ imaging:
   quality: 99
 
 params:
-  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
+  description: ILUGC - India Linux User Group Chennai
   homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Logo Credit [The other Linux Logo](http://ecogex.com/the-other-linux-logo/)
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: someUser
@@ -38,21 +38,25 @@ params:
 
 menu:
   nav:
-    - name: About
-      url: /about/
-      weight: 10
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: /post/
+      weight: 2
     - name: Getting Started
       url: /getting-started/
-      weight: 20
+      weight: 3
     - name: FAQ
       url: /faq/
-      weight: 30
+      weight: 4
     - name: Contact
       url: /contact/
-      weight: 40
+      weight: 5
     - name: Get Involved
       url: /get-involved/
-      weight: 50
+      weight: 6
+
 
 markup:
   defaultMarkdownHandler: goldmark
