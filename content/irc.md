@@ -11,8 +11,6 @@ People from ILUGC community hang in **#ilugc** channel on **[Freenode IRC networ
 | :------------------------------ | :------------------ |
 | [#ilugc](https://meet.ilugc.in) | chat.freenode.net |
 
-## Conducting IRC Meeting
-
-You can conduct IRC based meeting using ILUGC's server. Send a mail to [ILUGC mailing-list](https://www.freelists.org/list/ilugc) with your purpose, and people can help you organize your meeting through following URL
+You can join **#ilugc** through browser using the following URL.
 
 URL: https://meet.ilugc.in
