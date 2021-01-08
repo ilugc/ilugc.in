@@ -1,7 +1,7 @@
 ---
 title: ILUGC Monthly Meet - January 09, 2021 - 3-6 pm
 date: 2021-01-08T19:14:54+05:30
-url: /ilugc-meet-january-2020
+url: /ilugc-meet-january-2021
 author: Mohan R
 ---
 
