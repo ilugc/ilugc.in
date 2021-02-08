@@ -1,6 +1,6 @@
 ---
-title: "Call for Speakers - ILUGC Meet - Feburary 2021 - Lets meet on IRC (#ilugc in freenode.net)"
-url: /call-for-speakers-monthly-meet-feburary-13-2021
+title: "Call for Speakers - ILUGC Meet - February 2021 - Lets meet on IRC (#ilugc in freenode.net)"
+url: /call-for-speakers-monthly-meet-february-13-2021
 date: 2021-02-08T16:57:30+05:30
 author: Mohan R
 ---
@@ -17,7 +17,7 @@ https://richard.esplins.org/siwi/2011/07/08/getting-started-freenode-irc/
 
 Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998.
 
-We usually meet on the second saturday of every month, and for the month of **Feburary**, we shall meet through IRC on **Saturday 13, 2021 at 1500 IST**.
+We usually meet on the second saturday of every month, and for the month of **February**, we shall meet through IRC on **Saturday 13, 2021 at 1500 IST**.
 
 *IRC Server*: chat.freenode.net \
 *Channel*: #ilugc \
