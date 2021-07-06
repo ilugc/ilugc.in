@@ -1,7 +1,7 @@
 ---
-title: "Call for Speakers - ILUGC Meet - June 2021"
-url: /call-for-speakers-monthly-meet-june-12-2021
-date: 2021-06-11T16:36:48+05:30
+title: "Call for Speakers - ILUGC Meet - July 2021"
+url: /call-for-speakers-monthly-meet-july-10-2021
+date: 2021-07-06T10:41:36+05:30
 author: Mohan R
 ---
 
@@ -14,7 +14,7 @@ awareness on Free/Open Source Software (F/OSS) in Chennai since
 January 1998.
 
 We usually meet on the second Saturday of every month, and for the
-month of **June**, we shall meet through IRC on **Saturday 12, 2021 at 1500
+month of **July**, we shall meet through IRC on **Saturday 10, 2021 at 1500
 IST**.
 
 **IRC Server**: irc.libera.chat\
