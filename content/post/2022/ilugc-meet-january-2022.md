@@ -5,7 +5,6 @@ url: /ilugc-meet-january-2021
 author: Mohan R
 ---
 
-
 Indian Linux Users Group, Chennai [ ILUGC ] has been spreading
 awareness on Free/Open Source Software (F/OSS) in Chennai since
 January 1998.
