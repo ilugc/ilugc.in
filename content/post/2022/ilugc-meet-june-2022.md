@@ -21,7 +21,7 @@ https://meet.jit.si/ILUGCMeet11062022
 
 **Topic**: Discourse forum software setup
 
-**Description8*: Discourse is an open source forum software , in this
+**Description**: Discourse is an open source forum software , in this
 session we will see how to setup Discourse and google social login ,
 its a docker based setup
 
