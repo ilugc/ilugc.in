@@ -9,8 +9,8 @@ Indian Linux Users Group, Chennai [ ILUGC ] has been spreading
 awareness on Free/Open Source Software (F/OSS) in Chennai since
 January 1998.
 
-We usually meet on the second Saaturday of every month, and for the
-month of **May**, we shall meet through Jitsi on **Saturday 21, 2023 at 1500
+We usually meet on the second Saturday of every month, and for the 
+month of **January**, we shall meet through Jitsi on **Saturday 21, 2023 at 1500
 IST**.
 
 https://meet.jit.si/ILUGCMeet21012023
