@@ -144,6 +144,12 @@ Nowadays I am switching themes every 3 months once. And I will have a backup of 
 
 Having this much freedom in customizing, I feel like a kid in the ice cream shop wanting every single flavours of it.
 
+Below is my current customized setup
+
+![Application screen](/images/screenapplication.png)
+
+![Empty screen](/images/screenempty.png)
+
 ## Don't forget the rolling release.
 
 Arch is one of the rolling release distro, i.e we get updates regularly like daily and two days once with latest softwares in the market
