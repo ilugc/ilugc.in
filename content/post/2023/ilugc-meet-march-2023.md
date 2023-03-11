@@ -1,6 +1,6 @@
 ---
 title: ILUGC Monthly Meet - March 11, 2023 - 3.00 PM IST
-date: 2023-02-10T11:00:00+05:30
+date: 2023-03-11T11:00:00+05:30
 url: /ilugc-meet-march-2023
 author: Parameshwar Arunachalam 
 ---
