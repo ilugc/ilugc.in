@@ -26,7 +26,7 @@ $ sudo apt install git hugo
 Once you done installing the required packages, clone your copy of ilugc.in website repo like below
 
 ```bash
-$ git clone --recurse-submodules git@github.com:foouser/ilugc.in.git
+$ git clone --recurse-submodules git@github.com:ilugc/ilugc.in.git
 ```
 
 Once clone completed, **ilugc.in** directory will be created, go inside **ilugc.in** directory and run Hugo,
