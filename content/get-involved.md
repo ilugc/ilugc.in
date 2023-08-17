@@ -23,7 +23,7 @@ Following commands will install Both requirements in [Ubuntu 20.04](https://rele
 $ sudo apt install git hugo
 ```
 
-Once you done installing the required packages, clone your copy of ilugc.in website repo like below
+Once you done installing the required packages, clone your copy of ilugc.in website repo like below (where `foouser` is your Github username)
 
 ```bash
 $ git clone --recurse-submodules git@github.com:foouser/ilugc.in.git
