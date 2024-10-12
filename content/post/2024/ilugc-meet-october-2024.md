@@ -31,6 +31,7 @@ Links:
 - [Fedora Magazine Tux Digitisation Tutorial](https://fedoramagazine.org/diy-embroidery-with-inkscape-and-ink-stitch/)
 - [சென்னை file](https://github.com/ilugc/ilugc.in/blob/october-2024/content/post/2024/ChennaiLinuxInkStitch.svg)
 - [Lohit Tamil Fonts](https://github.com/lohit-fonts/lohit-tamil-fonts)
+- [EkType Fonts](https://github.com/EkType)
 
 ### After Talks
 
