@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.561834cm"
+   height="2.0414257cm"
+   viewBox="0 0 105.61835 20.414257"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="ChennaiLinuxInkStitch.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:inkstitch="http://inkstitch.org/namespace">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="5.6013786"
+     inkscape:cx="378.83531"
+     inkscape:cy="39.276045"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6"
+     showgrid="false" />
+  <metadata
+     id="metadata7">
+    <inkstitch:min_stitch_len_mm>0</inkstitch:min_stitch_len_mm>
+    <inkstitch:collapse_len_mm>3</inkstitch:collapse_len_mm>
+    <inkstitch:inkstitch_svg_version>1</inkstitch:inkstitch_svg_version>
+  </metadata>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect28"
+       is_visible="true"
+       lpeversion="1"
+       pattern="M 68.251293,45.130257"
+       copytype="repeated"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       hide_knot="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect27"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="277.778"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect26"
+       is_visible="true"
+       lpeversion="1"
+       pattern="M 68.251293,45.130257"
+       copytype="repeated"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       hide_knot="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect25"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="277.778"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="277.778"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="277.778"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <rect
+       x="64.00116"
+       y="196.98466"
+       width="561.66327"
+       height="311.52551"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="g6"
+     transform="translate(-39.0108, -37.1231)"
+     style="display:inline">
+    <g
+       id="g8">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:0.26458299, 0.26458299;stroke-dashoffset:0"
+         d="M 48.290241,56.885757 47.437528,56.593373"
+         id="path23"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="1" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 48.163728,56.321927 C 47.824731,56.321927 47.510538,56.251648 47.22115,56.111089 46.931762,55.970529 46.667179,55.759687 46.4274,55.478568 46.19589,55.18918 46.022257,54.872921 45.906502,54.529788 45.790747,54.186658 45.732869,53.816654 45.732869,53.419779 45.732869,52.626029 45.96438,51.948034 46.4274,51.385794 46.906958,50.823555 47.485734,50.542435 48.163728,50.542435 48.825187,50.542435 49.395695,50.823555 49.875252,51.385794 50.354809,51.948034 50.594588,52.626029 50.594588,53.419779 50.594588,54.213529 50.354809,54.899792 49.875252,55.478568 49.412231,56.040807 48.787886,56.199724 48.163728,56.321927 47.520653,56.447834 46.861391,56.299504 46.202848,56.182185 45.89604,56.12753 45.553966,56.028441 45.26158,55.875443 43.964878,55.196916 42.690161,54.742695 41.764119,53.221341 40.838077,51.699987 40.375057,49.889245 40.375057,47.789115 40.375057,45.192891 41.160538,42.968737 42.731502,41.116654 44.319002,39.264571 46.228963,38.338529 48.461385,38.338529 49.88352,38.338529 51.09895,38.851159 52.107674,39.876419 53.132934,40.885143 53.645564,42.100573 53.645564,43.522708 V 50.381204 53.810452 M 45.029548,56.737826 47.520087,55.292724 M 48.33979,48.31789 48.245321,51.482661 M 43.923281,50.844983 46.544846,52.120339 M 49.591529,53.372077 52.7563,53.324841 M 48.387026,55.332346 48.811365,57.988262 M 38.349505,48.058093 41.112776,48.034476 M 48.623204,35.89498 48.599585,39.27231 M 52.779916,44.350116 56.086396,44.30288 M 47.154761,56.844953 C 47.154761,56.844953 45.776459,56.362858 45.26158,55.875443 44.927914,55.559573 44.732413,55.131302 44.567049,54.684818 44.418221,54.238333 44.343807,53.767044 44.343807,53.270951 44.343807,52.179544 44.715877,51.245234 45.460018,50.468021 46.204158,49.690807 47.105395,49.302201 48.163728,49.302201 49.222062,49.302201 50.123299,49.690807 50.867439,50.468021 51.61158,51.245234 51.98365,52.179544 51.98365,53.270951 51.98365,54.676549 51.595044,55.743151 50.81783,56.470755 50.040616,57.181823 48.899601,57.537357 47.394783,57.537357 45.079679,57.537357 43.103572,56.58651 41.466463,54.684818 39.829354,52.783125 39.010799,50.484557 39.010799,47.789115 39.010799,44.845625 39.936841,42.332083 41.788924,40.24849 43.641007,38.164896 45.865161,37.123099 48.461385,37.123099 50.313468,37.123099 51.8927,37.751485 53.19908,39.008255 54.521997,40.24849 55.183455,41.753307 55.183455,43.522708 V 50.381204 53.810452 M 52.874389,52.434188 H 55.873836"
+         id="text1-3"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="sscscscssssscsssssccccscssasacssscscccacccccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 54.515819,53.810452 V 57.010896"
+         id="path28"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:none;stroke:#000000;stroke-width:0.265;stroke-opacity:1;stroke-dasharray:none"
+         d="M 53.645564,57.2397 V 53.810452 M 52.874389,55.68661 H 54.515819 56.157249 M 55.183455,57.2397 V 53.810452"
+         id="path19"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="2" />
+    </g>
+    <g
+       id="g9"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 69.886343,51.18389 71.008449,51.233213"
+         id="path29"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="1" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 71.107972,50.54242 H 69.272428 67.436883 M 67.436883,51.757848 H 69.272428 71.107972 M 67.969005,49.681676 67.935606,52.420515 M 69.272428,49.680062 69.305024,52.453916 M 70.641044,49.678506 V 52.453916"
+         id="path4-3"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:ties="3"
+         inkstitch:zigzag_underlay="True" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 65.923799,51.150134 H 67.436883"
+         id="path32"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:none;stroke:#000000;stroke-opacity:1"
+         d="M 250.41176,195.71514 231.81738,195.62046 C 230.1924,195.61219 228.81738,196.18296 227.69238,197.30796 226.62988,198.37046 226.09863,199.71421 226.09863,201.33921 226.09863,204.46421 227.31738,207.18296 229.75488,209.49546 232.25488,211.74546 235.25488,212.87046 238.75488,212.87046 241.56738,212.87046 244.00488,211.96421 246.06738,210.15171 248.12988,208.33921 249.16113,206.18296 249.16113,203.68296 V 195.62046 191.02671 174.80796 M 250.19084,191.08983 237.62988,191.02671 H 231.81738 C 228.69238,191.02671 225.97363,192.05796 223.66113,194.12046 221.41113,196.12046 220.28613,198.52671 220.28613,201.33921 220.28613,205.77671 222.09863,209.58921 225.72363,212.77671 229.34863,215.90171 233.69238,217.46421 238.75488,217.46421 243.19238,217.46421 246.97363,216.12046 250.09863,213.43296 253.28613,210.74546 254.87988,207.49546 254.87988,203.68296 V 195.62046 191.02671 174.80796 M 244.42504,208.57124 251.2419,215.89305 M 221.22878,213.39984 231.13847,206.33051 M 227.35133,188.46781 231.32783,197.43072 M 247.06104,179.29419 257.95123,179.227 M 244.87647,203.68296 257.95123,203.50676 M 215.46588,201.33921 230.10091,201.36443 M 245.63282,187.76152 245.27576,199.04357 M 238.87369,207.79143 238.67024,221.53806"
+         id="path6"
+         transform="scale(0.264583, 0.264583)"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cssscssscccccccscscsccccccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 66.891977,45.556709 62.040341,45.57341 62.053781,50.208415"
+         id="path30"
+         sodipodi:nodetypes="ccc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 61.334938,50.54242 V 45.035786 H 66.221455 68.664714 69.886343 M 69.913789,46.251214 H 68.719606 62.872827 V 50.54242 M 60.42042,49.681663 63.760463,49.648262 M 60.403719,47.330218 H 63.626862 M 64.39507,44.337594 64.411771,46.876027 M 69.538735,44.504596 69.555437,46.679246 M 60.620823,44.487896 63.459859,46.658924"
+         id="path5-1"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccccccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 70.120146,45.556709 H 71.014258"
+         id="path31"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 71.107972,45.035786 H 69.886343 M 69.913789,46.251214 H 71.107972 M 70.540749,44.337594 70.567202,46.775824"
+         id="path20"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="2" />
+    </g>
+    <g
+       id="g12"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 78.465103,56.937928 77.915019,56.498307"
+         id="path33"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="1" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 78.276618,56.321927 C 77.681305,56.321927 77.176943,56.090417 76.763532,55.627396 76.35012,55.147839 76.143414,54.569063 76.143414,53.891068 76.143414,53.213073 76.35012,52.634297 76.763532,52.15474 77.176943,51.675182 77.681305,51.435404 78.276618,51.435404 78.87193,51.435404 79.376292,51.675182 79.789704,52.15474 80.203115,52.634297 80.409821,53.213073 80.409821,53.891068 80.409821,54.552526 80.203115,55.123034 79.789704,55.602591 79.376292,56.082148 78.87193,56.321927 78.276618,56.321927 78.276618,56.321927 77.111818,56.393923 76.585806,56.186566 76.047199,55.974244 75.225641,55.106497 75.225641,55.106497 74.845303,54.775768 74.547646,54.34582 74.332672,53.816654 74.117698,53.287487 74.010211,52.700443 74.010211,52.055521 74.010211,50.368802 74.663401,48.93013 75.969782,47.739505 77.19348,46.615026 78.772711,46.019714 80.707477,45.953568 H 81.029938 C 81.757542,45.953568 82.443805,46.052787 83.088727,46.251224 83.816331,46.482734 84.444716,46.838268 84.973883,47.317826 M 77.947584,56.98845 C 77.947584,56.98845 76.753698,56.601171 76.252962,56.239741 75.839544,55.941338 75.225641,55.106497 75.225641,55.106497 75.126422,54.924596 75.052008,54.734427 75.002399,54.53599 74.95279,54.321016 74.927985,54.106042 74.927985,53.891068 74.927985,52.882344 75.250446,52.022448 75.895368,51.31138 76.540289,50.583776 77.334039,50.219974 78.276618,50.219974 79.219196,50.219974 80.012946,50.575508 80.657868,51.286576 81.302789,51.997643 81.62525,52.865807 81.62525,53.891068 81.62525,54.899792 81.294521,55.759688 80.633063,56.470755 79.988141,57.181823 79.202659,57.537357 78.276618,57.537357 76.755263,57.537357 75.457151,57.00819 74.382282,55.949857 73.323948,54.874987 72.794782,53.576875 72.794782,52.055521 72.794782,50.038073 73.563727,48.318281 75.101618,46.896146 76.639508,45.457474 78.508128,44.738138 80.707477,44.738138 81.782347,44.738138 82.766266,44.87043 83.659235,45.135013 84.56874,45.399596 85.312881,45.771667 85.891657,46.251224 M 77.667317,57.119385 78.162721,55.87723 M 78.334266,49.475156 78.287031,52.61631 M 79.319276,53.856735 82.386835,53.923536 M 81.09539,43.736393 81.12879,46.942838 M 72.377276,52.055521 74.6825,52.019709 M 74.332672,53.816654 77.287737,53.789934 M 78.490153,55.944264 78.440053,57.931592"
+         id="path3-6"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccsssssscacssccscccaccscscscssscscccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 86.350543,47.627884 85.43277,46.784525"
+         id="path34"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 85.678193,47.858916 C 86.174286,48.454228 86.768089,49.343542 87.032672,50.071146 87.297256,50.79875 87.429547,51.559427 87.429547,52.353177 87.429547,53.46112 87.280719,54.403698 86.983063,55.180911 86.685407,55.941589 86.321604,56.321927 85.891657,56.321927 85.461709,56.321927 85.097907,55.93332 84.80025,55.156107 84.519131,54.378893 84.378571,53.444583 84.378571,52.353177 84.378571,51.559427 84.502594,50.79875 84.750641,50.071146 85.015224,49.343542 85.395563,48.682083 85.891657,48.086771 L 86.80943,47.168998 C 87.156696,46.871341 87.570107,46.648099 88.049664,46.499271 88.529222,46.333906 89.033584,46.251224 89.56275,46.251224 M 89.56275,45.035794 C 88.851683,45.035794 88.173688,45.143281 87.528766,45.358255 86.900381,45.573229 86.354677,45.870886 85.891657,46.251224 L 84.973883,47.317826 C 84.312425,47.896602 83.791526,48.624206 83.411188,49.500638 83.030849,50.360534 82.84068,51.31138 82.84068,52.353177 82.84068,53.775313 83.138336,54.99901 83.733649,56.024271 84.345498,57.032995 85.064834,57.537357 85.891657,57.537357 86.735016,57.537357 87.454352,57.032995 88.049664,56.024271 88.644977,54.99901 88.942633,53.775313 88.942633,52.353177 88.942633,51.278307 88.752464,50.28612 88.372125,49.376615 88.008323,48.467109 87.322101,47.518678 86.644106,46.956439 M 89.245642,44.515439 89.245643,46.900827 M 85.976061,49.062905 87.852198,47.330229 M 86.742167,52.380132 89.481819,52.356515 M 85.834355,55.355963 85.915547,58.119233 M 82.08948,52.356515 85.254252,52.380132"
+         id="path9"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="csscscsccccccccccscscscccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 89.954173,45.729719 92.798327,45.719942 92.811915,56.182582"
+         id="path35"
+         sodipodi:nodetypes="ccc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 91.99361,57.239701 V 51.745463 46.251224 M 93.5315,46.251224 V 51.745463 57.239701 M 90.591851,56.2062 95.031979,56.158964 M 90.590444,50.207304 94.961126,50.136451 M 90.5883,46.948062 94.984743,46.900827"
+         id="path10"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 89.954173,45.395714 92.80125,45.421752"
+         id="path36"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 89.56275,46.251224 H 92.762555 94.362458 M 94.362458,45.035794 H 92.762555 89.56275 M 89.954173,44.605847 89.954174,46.853591 M 92.810133,44.515439 92.786521,46.924444"
+         id="path12"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 95.96236,46.251224 H 94.362458 M 94.362458,45.035794 H 95.96236 M 95.409862,44.605847 95.386244,46.641032"
+         id="path21"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="2" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 95.866056,45.623439 94.588175,45.554038"
+         id="path37"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3"
+         inkscape:label="path37" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 82.35049,40.050083 C 82.35049,39.620135 82.493414,39.380326 82.791071,39.082669 83.088727,38.785013 83.452529,38.636185 83.882477,38.636185 84.312425,38.636185 84.667959,38.785013 84.949078,39.082669 85.246735,39.380326 85.395563,39.685084 85.395563,40.115032 M 85.395563,40.303973 C 85.395563,40.733921 85.246735,40.967826 84.949078,41.265482 84.667959,41.546602 84.312425,41.687162 83.882477,41.687162 83.452529,41.687162 83.088727,41.538334 82.791071,41.240677 82.493414,40.943021 82.35049,40.670149 82.35049,40.256738 M 82.857055,38.422073 82.857056,41.799404 M 84.03794,38.103234 84.014323,42.189096 M 85.029883,38.729103 85.041693,41.622271"
+         id="path13"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="csscccsssccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True" />
+    </g>
+    <g
+       id="g10"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 102.99705,56.944253 102.42432,56.507325"
+         id="path38"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="1" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 102.63482,56.321927 C 102.12219,56.321927 101.68397,56.090417 101.32017,55.627396 100.97291,55.147839 100.79927,54.569063 100.79927,53.891068 100.79927,53.295755 101.00598,52.791393 101.41939,52.377982 101.8328,51.96457 102.33716,51.757865 102.93248,51.757865 103.44511,51.757865 103.87506,51.96457 104.22232,52.377982 104.58612,52.791393 104.76802,53.295755 104.76802,53.891068 104.76802,54.552526 104.56132,55.123034 104.14791,55.602591 103.7345,56.082148 103.23013,56.321927 102.63482,56.321927 102.63482,56.321927 101.67683,56.383139 101.24167,56.217306 100.82492,56.058489 100.17916,55.404154 100.17916,55.404154 99.699599,55.007279 99.327529,54.544258 99.062946,54.015091 98.798362,53.469388 98.666071,52.915417 98.666071,52.353177 98.666071,50.583776 99.286188,49.078958 100.52642,47.838724 101.78319,46.581953 103.29628,45.953568 105.06568,45.953568 105.76021,45.953568 106.44647,46.085859 107.12447,46.350443 107.80246,46.615026 108.43912,46.995365 109.03443,47.491458 M 102.61326,56.938348 C 102.61326,56.938348 101.64954,56.753606 101.24167,56.500718 100.80911,56.232518 100.49403,55.765844 100.17916,55.404154 99.994497,55.19203 99.914573,54.883255 99.831891,54.635208 99.765745,54.387161 99.732672,54.139115 99.732672,53.891068 99.732672,52.94849 100.04687,52.15474 100.67525,51.509818 101.30364,50.864896 102.05604,50.542435 102.93248,50.542435 103.7593,50.542435 104.47037,50.864896 105.06568,51.509818 105.67753,52.15474 105.98345,52.94849 105.98345,53.891068 105.98345,54.899792 105.65272,55.759687 104.99127,56.470755 104.34634,57.181823 103.56086,57.537357 102.63482,57.537357 101.21269,57.537357 99.988987,57.032995 98.963727,56.024271 97.955003,54.99901 97.450641,53.775313 97.450641,52.353177 97.50025,50.23651 98.260928,48.442305 99.732672,46.97056 101.20442,45.482279 102.98209,44.738138 105.06568,44.738138 106.02479,44.738138 106.90123,44.895235 107.69498,45.209427 108.50526,45.52362 109.15845,45.978373 109.65455,46.573685 M 102.63688,55.875552 102.21176,57.139099 M 99.259547,53.501973 101.62132,53.525591 M 103.03838,49.900274 102.97933,52.450986 M 104.11298,53.915283 106.56922,53.927092 M 102.96753,56.052685 103.02657,57.835821 M 96.815115,52.368324 98.964325,52.321088 M 105.16397,44.373733 V 46.334002 M 108.17523,47.491269 109.63952,45.719942"
+         id="path2-2"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccssscsscaccssssccascscccscscssscccccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 110.24986,47.950345 109.34449,47.032572"
+         id="path39"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 109.76015,48.217179 C 110.20664,48.729809 110.73769,49.525443 110.9692,50.219974 111.20071,50.897969 111.31646,51.609037 111.31646,52.353177 111.31646,53.46112 111.18417,54.403698 110.91959,55.180911 110.655,55.941589 110.33254,56.321927 109.9522,56.321927 109.57186,56.321927 109.2494,55.93332 108.98482,55.156107 108.72024,54.378893 108.58795,53.444583 108.58795,52.353177 108.58795,51.82401 108.7037,51.228698 108.93521,50.56724 109.16672,49.905781 109.50572,49.186445 109.9522,48.409232 L 110.54752,47.491458 C 111.14283,46.995365 111.6968,46.615026 112.20943,46.350443 112.72206,46.085859 113.18508,45.953568 113.59849,45.953568 114.62375,45.953568 115.49192,46.466198 116.20298,47.491458 116.91405,48.500182 117.26959,49.715612 117.26959,51.137747 117.26959,52.262227 117.02154,53.287487 116.52545,54.213529 M 117.91451,54.511185 C 118.49328,53.419779 118.78267,52.2953 118.78267,51.137747 V 51.088138 C 118.78267,49.335274 118.27831,47.846992 117.26959,46.623294 116.24433,45.366524 115.02063,44.738138 113.59849,44.738138 112.83782,44.738138 112.11021,44.895235 111.41568,45.209427 110.73769,45.52362 110.15064,45.978373 109.65455,46.573685 L 109.03443,47.491458 C 108.43912,48.202526 107.98436,48.971471 107.67017,49.798294 107.35598,50.625117 107.19888,51.476745 107.19888,52.353177 107.19888,53.775313 107.47173,54.99901 108.01744,56.024271 108.56314,57.032995 109.20806,57.537357 109.9522,57.537357 110.69634,57.537357 111.34127,57.032995 111.88697,56.024271 112.43267,54.99901 112.70552,53.775313 112.70552,52.353177 112.70552,51.377526 112.51535,50.468021 112.13502,49.624662 111.75468,48.764766 111.05016,47.892469 110.37217,47.330229 M 116.24067,51.226017 119.40544,51.199248 M 113.56447,44.056225 V 46.873157 M 110.47429,52.392716 113.68423,52.294258 M 109.95098,55.314513 109.96172,58.259261 M 106.4623,52.34386 109.29658,52.341001 M 109.75618,49.126598 111.20591,47.330229 M 115.83929,53.696158 119.00492,54.391142"
+         id="path14"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccscssssccsscsccsscscccsscscscccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 115.06663,56.802547 117.2848,54.572089"
+         id="path40"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 114.51627,56.321927 C 115.37616,55.825833 116.04589,55.123034 116.52545,54.213529 M 117.91451,54.511185 C 117.3192,55.635664 116.49237,56.644388 115.43404,57.537357 M 114.30402,55.214256 116.28791,57.764968 M 115.06367,54.658346 117.6689,56.662374 M 115.59807,54.151827 118.97152,54.99235"
+         id="path22"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="2" />
+    </g>
+    <g
+       id="g51"
+       style="display:inline"
+       transform="translate(48.6668, 0)">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 78.465103,56.937928 77.915019,56.498307"
+         id="path41"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="1" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 78.276618,56.321927 C 77.681305,56.321927 77.176943,56.090417 76.763532,55.627396 76.35012,55.147839 76.143414,54.569063 76.143414,53.891068 76.143414,53.213073 76.35012,52.634297 76.763532,52.15474 77.176943,51.675182 77.681305,51.435404 78.276618,51.435404 78.87193,51.435404 79.376292,51.675182 79.789704,52.15474 80.203115,52.634297 80.409821,53.213073 80.409821,53.891068 80.409821,54.552526 80.203115,55.123034 79.789704,55.602591 79.376292,56.082148 78.87193,56.321927 78.276618,56.321927 78.276618,56.321927 77.111818,56.393923 76.585806,56.186566 76.047199,55.974244 75.225641,55.106497 75.225641,55.106497 74.845303,54.775768 74.547646,54.34582 74.332672,53.816654 74.117698,53.287487 74.010211,52.700443 74.010211,52.055521 74.010211,50.368802 74.663401,48.93013 75.969782,47.739505 77.19348,46.615026 78.772711,46.019714 80.707477,45.953568 H 81.029938 C 81.757542,45.953568 82.443805,46.052787 83.088727,46.251224 83.816331,46.482734 84.444716,46.838268 84.973883,47.317826 M 77.947584,56.98845 C 77.947584,56.98845 76.753698,56.601171 76.252962,56.239741 75.839544,55.941338 75.225641,55.106497 75.225641,55.106497 75.126422,54.924596 75.052008,54.734427 75.002399,54.53599 74.95279,54.321016 74.927985,54.106042 74.927985,53.891068 74.927985,52.882344 75.250446,52.022448 75.895368,51.31138 76.540289,50.583776 77.334039,50.219974 78.276618,50.219974 79.219196,50.219974 80.012946,50.575508 80.657868,51.286576 81.302789,51.997643 81.62525,52.865807 81.62525,53.891068 81.62525,54.899792 81.294521,55.759688 80.633063,56.470755 79.988141,57.181823 79.202659,57.537357 78.276618,57.537357 76.755263,57.537357 75.457151,57.00819 74.382282,55.949857 73.323948,54.874987 72.794782,53.576875 72.794782,52.055521 72.794782,50.038073 73.563727,48.318281 75.101618,46.896146 76.639508,45.457474 78.508128,44.738138 80.707477,44.738138 81.782347,44.738138 82.766266,44.87043 83.659235,45.135013 84.56874,45.399596 85.312881,45.771667 85.891657,46.251224 M 77.667317,57.119385 78.162721,55.87723 M 78.334266,49.475156 78.287031,52.61631 M 79.319276,53.856735 82.386835,53.923536 M 81.09539,43.736393 81.12879,46.942838 M 72.377276,52.055521 74.6825,52.019709 M 74.332672,53.816654 77.287737,53.789934 M 78.490153,55.944264 78.440053,57.931592"
+         id="path42"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="ccsssssscacssccscccaccscscscssscscccccccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 86.350543,47.627884 85.43277,46.784525"
+         id="path43"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 85.678193,47.858916 C 86.174286,48.454228 86.768089,49.343542 87.032672,50.071146 87.297256,50.79875 87.429547,51.559427 87.429547,52.353177 87.429547,53.46112 87.280719,54.403698 86.983063,55.180911 86.685407,55.941589 86.321604,56.321927 85.891657,56.321927 85.461709,56.321927 85.097907,55.93332 84.80025,55.156107 84.519131,54.378893 84.378571,53.444583 84.378571,52.353177 84.378571,51.559427 84.502594,50.79875 84.750641,50.071146 85.015224,49.343542 85.395563,48.682083 85.891657,48.086771 L 86.80943,47.168998 C 87.156696,46.871341 87.570107,46.648099 88.049664,46.499271 88.529222,46.333906 89.033584,46.251224 89.56275,46.251224 M 89.56275,45.035794 C 88.851683,45.035794 88.173688,45.143281 87.528766,45.358255 86.900381,45.573229 86.354677,45.870886 85.891657,46.251224 L 84.973883,47.317826 C 84.312425,47.896602 83.791526,48.624206 83.411188,49.500638 83.030849,50.360534 82.84068,51.31138 82.84068,52.353177 82.84068,53.775313 83.138336,54.99901 83.733649,56.024271 84.345498,57.032995 85.064834,57.537357 85.891657,57.537357 86.735016,57.537357 87.454352,57.032995 88.049664,56.024271 88.644977,54.99901 88.942633,53.775313 88.942633,52.353177 88.942633,51.278307 88.752464,50.28612 88.372125,49.376615 88.008323,48.467109 87.322101,47.518678 86.644106,46.956439 M 89.245642,44.515439 89.245643,46.900827 M 85.976061,49.062905 87.852198,47.330229 M 86.742167,52.380132 89.481819,52.356515 M 85.834355,55.355963 85.915547,58.119233 M 82.08948,52.356515 85.254252,52.380132"
+         id="path44"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="csscscsccccccccccscscscccccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 89.954173,45.729719 92.798327,45.719942 92.811915,56.182582"
+         id="path45"
+         sodipodi:nodetypes="ccc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 91.99361,57.239701 V 51.745463 46.251224 M 93.5315,46.251224 V 51.745463 57.239701 M 90.591851,56.2062 95.031979,56.158964 M 90.590444,50.207304 94.961126,50.136451 M 90.5883,46.948062 94.984743,46.900827"
+         id="path46"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 89.954173,45.395714 92.80125,45.421752"
+         id="path47"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 89.56275,46.251224 H 92.762555 94.362458 M 94.362458,45.035794 H 92.762555 89.56275 M 89.954173,44.605847 89.954174,46.853591 M 92.810133,44.515439 92.786521,46.924444"
+         id="path48"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="3" />
+      <path
+         style="font-size:96px;line-height:0;font-family:'Lohit Tamil';-inkscape-font-specification:'Lohit Tamil';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         d="M 95.96236,46.251224 H 94.362458 M 94.362458,45.035794 H 95.96236 M 95.409862,44.605847 95.386244,46.641032"
+         id="path49"
+         aria-label="சென்னை"
+         sodipodi:nodetypes="cccccc"
+         inkstitch:satin_column="True"
+         inkstitch:zigzag_underlay="True"
+         inkstitch:ties="2" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.264583, 0.264583;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 95.866056,45.623439 94.588175,45.554038"
+         id="path50"
+         sodipodi:nodetypes="cc"
+         inkstitch:ties="3"
+         inkscape:label="path37" />
+    </g>
+  </g>
+</svg>
