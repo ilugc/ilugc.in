@@ -53,7 +53,12 @@ Example of an over-quote:
 13. Do not post messages in all capital letters. Mails in CAPS is considered rude and is similar to shouting during a conversation.
 14. Following these guidelines could be helpful - http://people.debian.org/~enrico/dcg/
 15. Don't send season's greetings or birthday or social networking site invites to the group. Its not mailing list etiquette.
+16. For Unsubscribe from mailing-list
+```
+Generally, the easiest way to perform common actions on a list is to use the list's Info Page, which is located at //www.freelists.org/list/ilugc.
 
+You can also unsubscribe by sending email to ilugc-request@freelists.org with “unsubscribe” in the Subject.
+```
 
 We must use the above guidelines to maintain better
 readability, proper archives, efficient bandwidth
