@@ -1,0 +1,6 @@
+schema/dtd/slides.dtd http://docbook.sourceforge.net/release/slides/3.4/schema/dtd/slides.dtd
+schema/dtd/slides-full.dtd http://docbook.sourceforge.net/release/slides/3.4/schema/dtd/slides-full.dtd
+schema/dtd/slides.dtd http://docbook.sourceforge.net/release/slides/current/schema/dtd/slides.dtd
+schema/dtd/slides-full.dtd http://docbook.sourceforge.net/release/slides/current/schema/dtd/slides-full.dtd
+xsl/ http://docbook.sourceforge.net/release/slides/3.4.0/xsl/
+xsl/ http://docbook.sourceforge.net/release/slides/current/xsl/

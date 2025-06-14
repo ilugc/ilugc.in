@@ -1,0 +1,78 @@
+# ======================================================================
+
+# Slides Module V3.3.0
+# Copyright (C) 1999, 2000, 2001, 2002, 2003 Norman Walsh
+# http://sourceforge.net/projects/docbook/
+# 
+# $Id: slides.mod,v 1.4 2003/12/22 13:55:40 nwalsh Exp $
+# 
+# Please direct all questions and comments about this DTD to
+# Norman Walsh, <ndw@nwalsh.com>.
+
+# ======================================================================
+
+only-in-full-nav.class = nav.class
+slides =
+  element slides {
+    slides.attlist, slidesinfo, speakernotes?, foil*, foilgroup*
+  }
+slides.attlist &=
+  label.attrib, status.attrib, common.attrib, role.attrib
+slidesinfo =
+  element slidesinfo {
+    slidesinfo.attlist,
+    (mediaobject
+     | legalnotice
+     | subjectset
+     | keywordset
+     | bibliocomponent.mix)+
+  }
+slidesinfo.attlist &= common.attrib, role.attrib
+foilgroup =
+  element foilgroup {
+    foilgroup.attlist,
+    foilgroupinfo?,
+    title,
+    subtitle?,
+    titleabbrev?,
+    (divcomponent.mix | only-in-full-nav.class)*,
+    foil+
+  }
+foilgroup.attlist &=
+  label.attrib, status.attrib, common.attrib, role.attrib
+foilgroupinfo =
+  element foilgroupinfo {
+    foilgroupinfo.attlist,
+    (mediaobject
+     | legalnotice
+     | subjectset
+     | keywordset
+     | bibliocomponent.mix)+
+  }
+foilgroupinfo.attlist &= common.attrib, role.attrib
+foil =
+  element foil {
+    foil.attlist,
+    foilinfo?,
+    title,
+    subtitle?,
+    titleabbrev?,
+    (divcomponent.mix | only-in-full-nav.class)+
+  }
+foil.attlist &= label.attrib, status.attrib, common.attrib, role.attrib
+foilinfo =
+  element foilinfo {
+    foilinfo.attlist,
+    (mediaobject
+     | legalnotice
+     | subjectset
+     | keywordset
+     | bibliocomponent.mix)+
+  }
+foilinfo.attlist &= common.attrib, role.attrib
+speakernotes =
+  element speakernotes { speakernotes.attlist, divcomponent.mix* }
+speakernotes.attlist &= common.attrib, role.attrib
+# End of Slides Module V3.3.0 ..........................................
+
+# ......................................................................

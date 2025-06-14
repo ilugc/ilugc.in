@@ -1,0 +1,611 @@
+Changes since version 3.3.1 (2004-01-30)
+
+Changes to slides/*
+
+  | 2005-04-28  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* VERSION: Version 3.4.0 released.
+  | 
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: back out previous change
+  | 
+  | 	* .cvsignore: ignore uninstall.sh and test.sh so that I can do
+  | 	  "cvstrim" without them getting deleted
+  | 
+  | 	* INSTALL, RELEASE-NOTES.xml, catalog: fixed typo
+  | 
+  | 	* Makefile: maintainer-clean instead of realclean
+  | 
+  | 	* README: updated with info about using RELAX NG versions
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* INSTALL, locatingrules.xml: New file.
+  | 
+  | 	* Makefile: pick up elease-related targets from common
+  | 	  Makefile
+  | 
+  | 	* catalog, catalog.xml: updated catalogs
+  | 
+  | 2005-04-25  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* RELEASE-NOTES.xml: updates for 3.4.0 release
+  | 
+  | 2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: ignore install.sh and friends
+  | 
+  | 	* AUTHORS, BUGS, COPYING, README, TODO: standard files to
+  | 	  match setup for other modules
+  | 
+  | 2004-11-11  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* RELEASE-NOTES.xml: Added info about Keynote and SVG support
+  | 
+  | 2004-11-10  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: ignore release notes
+  | 
+  | 	* RELEASE-NOTES.xml: New file.
+  | 
+
+Changes to slides/browser/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2004-11-05  Norman Walsh <nwalsh@users.sourceforge.net>
+  | 
+  | 	* slides.js: Bug #879749: fix keyboard navigation in slides in
+  | 	  Mozilla; I tested with firefox and ie and both seemed fine
+  | 	  so, ok
+  | 
+  | 2004-09-20  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* slides.css: Visual tweak
+  | 
+
+Changes to slides/demo/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: use -output switch instead of shell redirection
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 	* Makefile: created separate makefiles for all subdirs; also,
+  | 	  build PDF
+  | 
+  | 	* index.html, index.xml: index file source moved to DocBook
+  | 	  XML; build now generates HTML from that
+  | 
+
+Changes to slides/doc/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: fixed param.html build
+  | 
+
+Changes to slides/graphics/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/schema/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: maintainer-clean instead of realclean
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: clean target added
+  | 
+
+Changes to slides/tests/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: do rm -f
+  | 
+  | 	* Makefile, dbhtml-dir.xml: added test for support of "dbhtml
+  | 	  dir" PI
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* catalog.xml, minimal.xml, testhtml.xml, tr-862918.xml:
+  | 	  updated URIs and removed catalog.xml
+  | 
+  | 2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: use fop by default; $(XSLT) instead of Saxon
+  | 
+  | 	* Makefile: simplify tests build
+  | 
+
+Changes to slides/xsl/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: ignore ChangeLog so that I can do "cvstrim"
+  | 	  without it getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: switch to DIRS var / base target setup
+  | 
+
+Changes to slides/demo/browser/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-23  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/default/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames1/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames2/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames3/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames4/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames5/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames6/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/frames7/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/graphics/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-23  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile, arrow.gif, blank.gif, blank.png, hidetoc.gif,
+  | 	  plus.gif, pointer.png, showtoc.gif: use Makefile for
+  | 	  demo/graphics build & remove copied files from source
+  | 	  control (these are all copied over from slides/graphics)
+  | 
+
+Changes to slides/demo/plain/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/source/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/demo/tables/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/vslides/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/demo/w3c/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: New file.
+  | 
+
+Changes to slides/graphics/active/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/graphics/inactive/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/graphics/toc/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/schema/dtd/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: maintainer-clean instead of realclean
+  | 
+  | 	* slides-custom.dtd: removed "XML" from public ID
+  | 
+  | 	* slides.dtd: New file.
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* slides-custom.dtd, slides-full.dtd: update to v3.4
+  | 
+  | 2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile, slides-custom.dtd, slides-full.dtd: use Simplified
+  | 	  1.1 and DocBook 4.4
+  | 
+
+Changes to slides/schema/relaxng/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: maintainer-clean instead of realclean
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: ignore generated files
+  | 
+  | 	* Makefile: generate RELAX schemas from DTD sources
+  | 
+
+Changes to slides/tests/dbhtml-dir-test/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+
+Changes to slides/xsl/fo/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2004-11-05  Norman Walsh <nwalsh@users.sourceforge.net>
+  | 
+  | 	* plain.xsl: Use foil properties
+  | 
+  | 2004-09-30  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* plain.xsl: Added attribute-set to easy control appearance of
+  | 	  footer
+  | 
+  | 2004-09-24  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* plain.xsl: Added support for foil/subtitle. Bookmarks in XEP
+  | 	  can contain i18n characters.
+  | 
+  | 2004-09-20  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* plain-titlepage.xml: Visual tweak
+  | 
+  | 2004-04-25  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* Makefile, plain-titlepage.xml: Changed attribute namespaces
+  | 	  accordingly to new schema used for titlepage templates.
+  | 
+
+Changes to slides/xsl/html/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* frames.xsl, slides-common.xsl: add meta generator stamp
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: added "clean" targets
+  | 
+  | 2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* frames.xsl: "foilgroup" in filenames instead of "foilgrp"
+  | 	  (for clarity and because of report that "filegrp" caused
+  | 	  some kind of linking problem
+  | 
+  | 	* slides-common.xsl: Added support for dbhtml dir PI (Tracker
+  | 	  #1179044). Thanks to Mauritz Jeanson for the patch. And to
+  | 	  M. Sean Gilligan for submitting the original request (on
+  | 	  docbook-apps).
+  | 
+  | 2004-09-20  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* slides-common.xsl: Fixed bug #988055. Xrefs are now
+  | 	  supported to foil and foilgroup. (You must have the DocBook
+  | 	  stylesheets 1.66.2+ to use xrefs.)
+  | 
+  | 2004-03-04  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* frames.xsl, param.xweb, slides-common.xsl: Added new
+  | 	  parameter show.foil.number which can enable numbering of
+  | 	  slides. Currently works only with frames.xsl and
+  | 	  multiframe=0.
+  | 
+  | 	* slides-common.xsl: Added missing class on which CSS
+  | 	  stylesheet depends.
+  | 
+
+Changes to slides/xsl/htmlhelp/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2004-09-20  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* htmlhelp.xsl: Pretty print source code
+  | 
+  | 2004-05-04  Jirka Kosek <kosek@users.sourceforge.net>
+  | 
+  | 	* htmlhelp.xsl: New file.
+  | 
+
+Changes to slides/xsl/keynote/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* ChangeLog: ChangeLog should not be under version control
+  | 
+  | 2004-11-10  <balls@users.sourceforge.net>
+  | 
+  | 	* ChangeLog, default.xsl: New file.
+  | 
+
+Changes to slides/xsl/svg/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2004-11-10  <balls@users.sourceforge.net>
+  | 
+  | 	* default.xsl: New file.
+  | 
+
+Changes to slides/xsl/xhtml/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 	* Makefile: add meta generator stamp
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* Makefile: added "clean" targets
+  | 
+
+Changes to slides/demo/graphics/active/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-23  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* arr-next.png, arr-prev.png, but-fforward.png, but-info.png,
+  | 	  but-next.png, but-prev.png, but-rewind.png, nav-home.png,
+  | 	  nav-next.png, nav-prev.png, nav-toc.png, nav-up.png,
+  | 	  w3c-next.png, w3c-prev.png, w3c-toc.png: use Makefile for
+  | 	  demo/graphics build & remove copied files from source
+  | 	  control (these are all copied over from slides/graphics)
+  | 
+
+Changes to slides/demo/graphics/inactive/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-23  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* but-fforward.png, but-info.png, but-next.png, but-prev.png,
+  | 	  but-rewind.png, nav-home.png, nav-next.png, nav-prev.png,
+  | 	  nav-toc.png, nav-up.png, w3c-next.png, w3c-prev.png,
+  | 	  w3c-toc.png: use Makefile for demo/graphics build & remove
+  | 	  copied files from source control (these are all copied over
+  | 	  from slides/graphics)
+  | 
+
+Changes to slides/demo/graphics/toc/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: added ChangLog to .cvsignore files, so that I
+  | 	  can do a "cvstrim" without them getting deleted
+  | 
+  | 2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2005-04-23  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* bullet.png, closed.png, open.png: use Makefile for
+  | 	  demo/graphics build & remove copied files from source
+  | 	  control (these are all copied over from slides/graphics)
+  | 
+
+Changes to slides/xsl/keynote/xsltsl/*
+
+  | 2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+  | 
+  | 	* .cvsignore: New file.
+  | 
+  | 2004-11-10  <balls@users.sourceforge.net>
+  | 
+  | 	* cmp.xsl, date-time.xsl, example.xsl, markup.xsl, math.xsl,
+  | 	  node.xsl, stdlib.xsl, string.xsl, svg.xsl, uri.xsl: New
+  | 	  file.
+  | 
+

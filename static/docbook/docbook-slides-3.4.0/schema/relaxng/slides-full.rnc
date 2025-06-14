@@ -1,0 +1,32 @@
+# ======================================================================
+
+# Slides Full XML V3.4 DTD
+# Copyright (C) 1999, 2000, 2001, 2002, 2003 Norman Walsh
+# http://sourceforge.net/projects/docbook/
+# 
+# This version of Slides is based on "full" DocBook rather than
+# the Simplified DocBook XML DTD.
+# 
+# $Id: slides-full.dtd,v 1.7 2005/04/26 13:55:32 xmldoc Exp $
+# 
+# Please direct all questions and comments about this DTD to
+# Norman Walsh, <ndw@nwalsh.com>.
+# 
+# Common declaration:
+# 
+# <?xml version='1.0'?>
+# <!DOCTYPE slides
+#   PUBLIC "-//Norman Walsh//DTD Slides Full XML V3.4//EN"
+#   "http://docbook.sourceforge.net/release/slides/3.4/schema/dtd/slides-full.dtd">
+
+# ======================================================================
+
+local.divcomponent.mix = speakernotes
+local.component.mix = speakernotes
+# In this version, we use full DocBook
+include "docbookx.rnc"
+include "slides.mod.rnc"
+start = slides
+# End of Slides Full XML V3.4 DTD ....................................
+
+# ......................................................................

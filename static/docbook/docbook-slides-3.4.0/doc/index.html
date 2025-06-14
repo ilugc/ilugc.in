@@ -1,0 +1,23 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>The Slides Document Type</title><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="article" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>The Slides Document Type</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Norman</span> <span class="surname">Walsh</span></h3><div class="affiliation"><div class="address"><p><code class="email">&lt;<a href="mailto:ndw@nwalsh.com">ndw@nwalsh.com</a>&gt;</code></p></div></div></div></div><div><p class="releaseinfo">$Id: slides.xml,v 1.2 2002/05/30 12:22:43 nwalsh Exp $</p></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#ch.stylesheet">Choose a Stylesheet</a></span></dt><dt><span class="section"><a href="#ch.params">Choose your Parameters</a></span></dt><dt><span class="section"><a href="#ch.process">Process the Slides</a></span></dt></dl></div><p>The Slides Document Type is an XML vocabulary derived from
+DocBook. It is used to create presentations (slides, foils, whatever
+you call them) in HTML or print.</p><p>Presentations are by nature visual and the Slides stylesheets
+provide a wide range of options to control how the transformation from
+XML to HTML is performed.</p><p>This document is a first attempt at describing what some of
+these options are and how to use them.</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ch.stylesheet"></a>Choose a Stylesheet</h2></div></div></div><p>At the highest level, you can choose one of five stylesheets:</p><div class="itemizedlist"><ul type="disc"><li><p><code class="filename">slides.xsl</code> produces basic slides in HTML, one page
+per slide.
+</p></li><li><p><code class="filename">frames.xsl</code> produces slides in HTML using frames.
+</p></li><li><p><code class="filename">tables.xsl</code> produces slides in HTML using tables, one page
+per slide.
+</p></li><li><p><code class="filename">w3c.xsl</code> produces basic slides in HTML, one
+page per slide, using a navigation style similar to that of most W3C
+talks.
+</p></li><li><p><code class="filename">fo-plain.xsl</code> produces basic slides, one
+page per slide, for print using XSL Formatting Objects.
+</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ch.params"></a>Choose your Parameters</h2></div></div></div><p>The <a href="param.html" target="_top">parameter reference</a> summarizes the
+parameters that you can set to change the features of the slides.</p><p>Be aware that some features require JavaScript. Some effort has been taken
+to assure that these features work across different browsers on different platforms,
+but it is possible that older browsers will not render slides that use JavaScript
+correctly.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ch.process"></a>Process the Slides</h2></div></div></div><p>Run your slides source through your favorite XSLT processor using the stylesheet
+and parameters you selected.</p><p>View the results in your favorite browser.</p></div></div></body></html>
