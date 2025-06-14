@@ -19,14 +19,6 @@ IST**.
 
 #### Talk 0
 
-**Topic**: Injee https://injee.org/\
-**Description**: It's a no configuration instant Database for front end developers. A front end dev need not depend on back end dev, at least for proof of concept development.\
-**Duration**: 30 mins\
-**Full Name**: Karthikeyan A K\
-**About Yourself**: Just another free software crusader.
-
-#### Talk 1
-
 **Topic**: DocBook\
 **Description**: Lean and usable documentation for the GNU/Linux desktop for Sphinx and other documentation builders.\
 **Duration**: 15 minutes\

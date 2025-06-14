@@ -68,9 +68,9 @@ tools such as
 </para></listitem>
 <listitem><para>$ python -m venv docbookenv
 </para></listitem>
-<listitem><para>$ pip install sphinx
-</para></listitem>
 <listitem><para>$ source docbookenv/bin/activate
+</para></listitem>
+<listitem><para>$ pip install sphinx
 </para></listitem>
 <listitem><para>$ git clone --depth 1 https://github.com/Ezhil-Language-Foundation/open-tamil/
 </para></listitem>
@@ -92,6 +92,9 @@ or
 <itemizedlist>
 <listitem><para><ulink url="https://apps.gnome.org/Yelp/">Yelp</ulink> at present has
 support for only a few image formats
+</para></listitem>
+<listitem><para>Need better support for email addresses when processing
+transformed documents in texinfo
 </para></listitem>
 <listitem><para>Would be nice to have other viewers in addition to
 <ulink url="https://apps.gnome.org/Yelp/">Yelp</ulink> and
@@ -115,6 +118,9 @@ documentation
 </para></listitem>
 <listitem><para>
 <ulink url="https://opensource.com/article/17/9/docbook">"DocBook Introduction" by Seth Kenlon</ulink>
+</para></listitem>
+<listitem><para>
+<ulink url="https://www.gnu.org/software/texinfo/">Texinfo</ulink>
 </para></listitem>
 </itemizedlist>
 </foil>
