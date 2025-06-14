@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<!DOCTYPE slides SYSTEM "docbook-slides-3.4.0/schema/dtd/slides.dtd">
+<?dbhtml graphics-dir="docbook-slides-3.4.0/graphics" css-stylesheet-dir="docbook-slides-3.4.0/browser"?>
+<?dbhtml script-dir="docbook-slides-3.4.0/browser"?>
+<slides>
+<slidesinfo>
+<title>DocBook: Lean and Usable Desktop Documentation</title>
+  <author><firstname>Benson</firstname><surname>Muite</surname></author>
+  <pubdate>Saturday, 14 Jun 2025</pubdate>
+  <releaseinfo role="version">Version 1.0</releaseinfo>
+  <copyright><year>2025</year>
+             <holder>Benson Muite</holder></copyright>
+</slidesinfo>
+
+<foil><title>Outline</title>
+<itemizedlist>
+<listitem><para>Introduction
+</para></listitem>
+<listitem><para>What is DocBook?
+</para></listitem>
+<listitem><para>Example Documentation
+</para></listitem>
+<listitem><para>Improvements Needed
+</para></listitem>
+<listitem><para>References and Further Resources
+</para></listitem>
+</itemizedlist>
+</foil>
+
+<foil><title>Introduction</title>
+<itemizedlist>
+<listitem><para>Many projects create documentation using
+<ulink url="https://www.sphinx-doc.org/en/master/index.html">Sphinx</ulink>
+</para></listitem>
+<listitem><para>Default output is to an html webpage, with custom fonts,
+javascript and other theming
+</para></listitem>
+<listitem><para>When creating a distribution package, this will bundle many
+unnecessary extras
+</para></listitem>
+<listitem><para>Distribution will have a non-uniform feel
+</para></listitem>
+<listitem><para>Not great for offline documentation
+</para></listitem>
+</itemizedlist>
+</foil>
+
+<foil><title>What is DocBook?</title>
+<itemizedlist>
+<listitem><para>An open cross platform documentation format based on xml and
+defined in an <ulink url="https://oasis-open.org/docbook">Oasis</ulink> standard
+</para></listitem>
+<listitem><para>Find out more at from the
+<ulink url="https://docbook.org/">official guide</ulink>
+</para></listitem>
+<listitem><para>It is sufficient to know it exists to use it from documentation
+tools such as
+<ulink url="https://www.sphinx-doc.org/en/master/index.html">Sphinx</ulink>
+<ulink url="https://asciidoc.org/">Asciidoc</ulink> and
+<ulink url="https://pandoc.org/">Pandoc</ulink>
+</para></listitem>
+</itemizedlist>
+</foil>
+
+<foil><title>Example Documentation</title>
+<itemizedlist>
+<listitem><para>$ sudo dnf install python3-devel python3-pip git texinfo yelp
+</para></listitem>
+<listitem><para>$ python -m venv docbookenv
+</para></listitem>
+<listitem><para>$ source docbookenv/bin/activate
+</para></listitem>
+<listitem><para>$ pip install sphinx
+</para></listitem>
+<listitem><para>$ git clone --depth 1 https://github.com/Ezhil-Language-Foundation/open-tamil/
+</para></listitem>
+<listitem><para>$ sphinx-build open-tamil/sphinx_doc texinfo -b texinfo 
+</para></listitem>
+<listitem><para>$ cd texinfo &amp;&amp; makeinfo --docbook open-tamil.texi
+</para></listitem>
+<listitem><para>$ yelp open-tamil.xml &amp;
+</para></listitem>
+<listitem><para>Try on
+<ulink url="https://gitlab.com/kachilug/tamilrulepy">tamilrulepy</ulink>
+or
+<ulink url="https://github.com/goru001/inltk">inltk</ulink>
+</para></listitem>
+</itemizedlist>
+</foil>
+
+<foil><title>Improvements Needed</title>
+<itemizedlist>
+<listitem><para><ulink url="https://apps.gnome.org/Yelp/">Yelp</ulink> at present has
+support for only a few image formats
+</para></listitem>
+<listitem><para>Need better support for email addresses when processing
+transformed documents in texinfo
+</para></listitem>
+<listitem><para>Would be nice to have other viewers in addition to
+<ulink url="https://apps.gnome.org/Yelp/">Yelp</ulink> and
+<ulink url="https://apps.kde.org/khelpcenter/">KHelpCenter</ulink>
+</para></listitem>
+<listitem><para><ulink url="https://www.mkdocs.org/">MkDocs</ulink>
+support needed to be able to process
+<ulink url="https://gitlab.com/boopalan-dev/tamilstring">tamilstring</ulink>
+documentation
+</para></listitem>
+</itemizedlist>
+</foil>
+
+<foil><title>References and Further Resources</title>
+<itemizedlist>
+<listitem><para>
+<ulink url="https://apps.gnome.org/Yelp/">Yelp</ulink>
+</para></listitem>
+<listitem><para>
+<ulink url="https://tdg.docbook.org/tdg/slides/5.2/">"DocBook Slides: The Definitive Guide" by Norman Walsh</ulink>
+</para></listitem>
+<listitem><para>
+<ulink url="https://opensource.com/article/17/9/docbook">"DocBook Introduction" by Seth Kenlon</ulink>
+</para></listitem>
+<listitem><para>
+<ulink url="https://www.gnu.org/software/texinfo/">Texinfo</ulink>
+</para></listitem>
+</itemizedlist>
+</foil>
+</slides>
