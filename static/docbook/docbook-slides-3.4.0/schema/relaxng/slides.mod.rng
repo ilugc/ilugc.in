@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <!-- ====================================================================== -->
+  <!--
+    Slides Module V3.3.0
+    Copyright (C) 1999, 2000, 2001, 2002, 2003 Norman Walsh
+    http://sourceforge.net/projects/docbook/
+    
+    $Id: slides.mod,v 1.4 2003/12/22 13:55:40 nwalsh Exp $
+    
+    Please direct all questions and comments about this DTD to
+    Norman Walsh, <ndw@nwalsh.com>.
+  -->
+  <!-- ====================================================================== -->
+  <define name="only-in-full-nav.class">
+    <ref name="nav.class"/>
+  </define>
+  <define name="slides">
+    <element name="slides">
+      <ref name="slides.attlist"/>
+      <ref name="slidesinfo"/>
+      <optional>
+        <ref name="speakernotes"/>
+      </optional>
+      <zeroOrMore>
+        <ref name="foil"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="foilgroup"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="slides.attlist" combine="interleave">
+    <ref name="label.attrib"/>
+    <ref name="status.attrib"/>
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="slidesinfo">
+    <element name="slidesinfo">
+      <ref name="slidesinfo.attlist"/>
+      <oneOrMore>
+        <choice>
+          <ref name="mediaobject"/>
+          <ref name="legalnotice"/>
+          <ref name="subjectset"/>
+          <ref name="keywordset"/>
+          <ref name="bibliocomponent.mix"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="slidesinfo.attlist" combine="interleave">
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="foilgroup">
+    <element name="foilgroup">
+      <ref name="foilgroup.attlist"/>
+      <optional>
+        <ref name="foilgroupinfo"/>
+      </optional>
+      <ref name="title"/>
+      <optional>
+        <ref name="subtitle"/>
+      </optional>
+      <optional>
+        <ref name="titleabbrev"/>
+      </optional>
+      <zeroOrMore>
+        <choice>
+          <ref name="divcomponent.mix"/>
+          <ref name="only-in-full-nav.class"/>
+        </choice>
+      </zeroOrMore>
+      <oneOrMore>
+        <ref name="foil"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="foilgroup.attlist" combine="interleave">
+    <ref name="label.attrib"/>
+    <ref name="status.attrib"/>
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="foilgroupinfo">
+    <element name="foilgroupinfo">
+      <ref name="foilgroupinfo.attlist"/>
+      <oneOrMore>
+        <choice>
+          <ref name="mediaobject"/>
+          <ref name="legalnotice"/>
+          <ref name="subjectset"/>
+          <ref name="keywordset"/>
+          <ref name="bibliocomponent.mix"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="foilgroupinfo.attlist" combine="interleave">
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="foil">
+    <element name="foil">
+      <ref name="foil.attlist"/>
+      <optional>
+        <ref name="foilinfo"/>
+      </optional>
+      <ref name="title"/>
+      <optional>
+        <ref name="subtitle"/>
+      </optional>
+      <optional>
+        <ref name="titleabbrev"/>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <ref name="divcomponent.mix"/>
+          <ref name="only-in-full-nav.class"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="foil.attlist" combine="interleave">
+    <ref name="label.attrib"/>
+    <ref name="status.attrib"/>
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="foilinfo">
+    <element name="foilinfo">
+      <ref name="foilinfo.attlist"/>
+      <oneOrMore>
+        <choice>
+          <ref name="mediaobject"/>
+          <ref name="legalnotice"/>
+          <ref name="subjectset"/>
+          <ref name="keywordset"/>
+          <ref name="bibliocomponent.mix"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="foilinfo.attlist" combine="interleave">
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+  <define name="speakernotes">
+    <element name="speakernotes">
+      <ref name="speakernotes.attlist"/>
+      <zeroOrMore>
+        <ref name="divcomponent.mix"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="speakernotes.attlist" combine="interleave">
+    <ref name="common.attrib"/>
+    <ref name="role.attrib"/>
+  </define>
+</grammar>
+<!-- End of Slides Module V3.3.0 .......................................... -->
+<!-- ...................................................................... -->

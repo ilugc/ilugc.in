@@ -1,0 +1,51 @@
+2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* .cvsignore: added ChangLog to .cvsignore files, so that I can do a "cvstrim"
+	without them getting deleted
+
+	* Makefile: maintainer-clean instead of realclean
+
+	* slides-custom.dtd: removed "XML" from public ID
+
+	* slides.dtd: New file.
+
+2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* slides-custom.dtd, slides-full.dtd: update to v3.4
+
+2005-04-22  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* Makefile, slides-custom.dtd, slides-full.dtd: use Simplified 1.1 and DocBook 4.4
+
+2003-12-22  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* Makefile: Added doc-full target
+
+	* slides-custom.dtd: Based on Simplified 1.1b1
+
+	* slides-custom.dtd: Exclude bibliomset (it was never used, but was accidentally present)
+
+	* slides-custom.dtd, slides.mod: Fix typo in PE name
+
+	* slides-full.dtd: Based on CR2
+
+2003-12-19  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* Makefile, slides-custom.dtd, slides-full.dtd, slides.mod: 
+	Prep for the V3.3.0 release based on 4.3CR1
+
+2003-06-03  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* slides-full.dtd: Allow speakernotes in more places like slides.dtd
+
+2003-01-24  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* slides-custom.dtd, slides-full.dtd, slides.mod: Fix version numbers
+
+2003-01-23  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* .cvsignore, slides-custom.dtd, slides-full.dtd, slides.mod: 
+	New file.
+
+	* Makefile: New file.
+

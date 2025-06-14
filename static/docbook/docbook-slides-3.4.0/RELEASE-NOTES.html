@@ -1,0 +1,46 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>DocBook Slides Release Notes</title><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="article" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>DocBook Slides Release Notes</h1></div><div><h3 class="corpauthor">DocBook Project Development Team</h3></div><div><p class="releaseinfo">$Id: RELEASE-NOTES.xml,v 1.4 2005/04/27 19:33:21 xmldoc Exp $</p></div><div><p class="pubdate">2005-04-28</p></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e22">Release 3.4.0</a></span></dt><dd><dl><dt><span class="section"><a href="#V340_schema">Schemas</a></span></dt><dt><span class="section"><a href="#V340_fo">FO</a></span></dt><dt><span class="section"><a href="#V340_html">HTML</a></span></dt><dt><span class="section"><a href="#V340_htmlhelp">HTML Help</a></span></dt><dt><span class="section"><a href="#d0e132">Install</a></span></dt></dl></dd><dt><span class="section"><a href="#old">Older releases</a></span></dt></dl></div><p>These are the release notes for the DocBook Slides
+  distribution. This file provides a high-level overview of features
+  and API changes in each release.</p><p>Bug fixes are (mostly) not documented here. For a complete
+  list of changes, including descriptions of bug fixes, see the <a href="NEWS" target="_top">NEWS</a> file, which is auto-generated from the commit
+  descriptions for changes in the project CVS repository.</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e22"></a>Release 3.4.0</h2></div></div></div><p>This is a feature release that includes some significant
+    schema changes as well as fixes for a few bugs. The feature
+    changes include newly added support for generating presentations
+    in HTML Help format. There are also experimental versions of
+    stylesheets for generating presentations in Keynote and SVG
+    formats. It also includes a new (and still experimental)
+    <code class="filename"><a href="install.sh" target="_top">install.sh</a></code>
+    script to facilitate XML catalog and locating-rules setup.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="V340_schema"></a>Schemas</h3></div></div></div><div class="itemizedlist"><ul type="disc"><li><p>Slides (non-full) is now based on <a href="http://docbook.org/xml/simple/1.1/index.html" target="_top">Simplified
+	  DocBook 1.1</a> and Slides "full" is now based on <a href="http://docbook.org/xml/4.4/index.html" target="_top">DocBook
+	  4.4</a>. The main benefit this provides is the ability to
+	  use HTML tables in your Slides XML source (instead of just CALS
+	  tables).</p></li><li><p>RELAX NG schemas in RNC (compact-syntax) form as well as
+	  in RNG (XML syntax) form are now included in the
+	  distribution. You can use those to do context-sensitive
+	  Slides editing in a RELAX NG-aware editor such as Emacs/nXML,
+	  oXygen XML Editor, XMLBuddy, or Exchanger XML Editor. (Note
+	  that the RELAX NG schemas are currently generated from the
+	  DTDs).</p></li><li><p>A <code class="filename"><a href="locatingrules.xml" target="_top">locatingrules.xml</a> </code> file has been added
+	  to the distribution. The
+	  <code class="filename"><a href="locatingrules.xml" target="_top">locatingrules.xml</a></code> file tells a
+	  "locating rules"-aware editor such as Emacs/nXML to
+	  automatically associate the included RELAX NG Slides schema
+	  with any document whose root element is
+	  <code class="sgmltag-element">slides</code>, <code class="sgmltag-element">foil</code>,
+	  <code class="sgmltag-element">foilgroup</code>, or
+	  <code class="sgmltag-element">speakernotes</code>.</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="V340_fo"></a>FO</h3></div></div></div><div class="itemizedlist"><ul type="disc"><li>Added attribute-set to easily control appearance of
+          footer</li><li>Added support for
+          <code class="sgmltag-element">foil</code>/<a href="http://www.docbook.org/tdg/en/html/subtitle.html"><code class="sgmltag-element">subtitle</code></a></li><li>Bookmarks in XEP can now contain i18n
+	  characters</li><li>Changed attribute namespaces accordingly to new
+          schema used for titlepage templates</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="V340_html"></a>HTML</h3></div></div></div><div class="itemizedlist"><ul type="disc"><li><a href="http://www.docbook.org/tdg/en/html/xref.html"><code class="sgmltag-element">xref</code></a> to <code class="sgmltag-element">foil</code>
+          and <code class="sgmltag-element">foilgroup</code> is now supported. (You must
+          have the DocBook XSL stylesheets v1.67.0 or greater to use
+          xrefs.)</li><li>Added new parameter
+          <em class="parameter"><code>show.foil.number</code></em> which can enable
+          numbering of slides. Currently works only with
+          <code class="filename">frames.xsl</code> and
+          <code class="literal">multiframe=0</code></li><li>Added support for <code class="literal"><a href="http://www.sagehill.net/docbookxsl/Chunking.html#dbhtmlDirPI" target="_top">dbhtml dir</a></code> processing instruction</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="V340_htmlhelp"></a>HTML Help</h3></div></div></div><div class="itemizedlist"><ul type="disc"><li>Slides can now be generated in HTML Help format</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e132"></a>Install</h3></div></div></div><div class="itemizedlist"><ul type="disc"><li><p>A new (and still experimental) <code class="filename"><a href="install.sh" target="_top">install.sh</a></code> file has
+	  been added to the Slides distribution. For information on
+	  using it, see the <code class="filename"><a href="INSTALL" target="_top">INSTALL</a></code> file.</p></li></ul></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="old"></a>Older releases</h2></div></div></div><p>Sorry, there are no release notes for releases prior to the
+    3.4.0 release.</p></div></div></body></html>

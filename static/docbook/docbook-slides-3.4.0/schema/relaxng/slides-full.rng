@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <!-- ====================================================================== -->
+  <!--
+    Slides Full XML V3.4 DTD
+    Copyright (C) 1999, 2000, 2001, 2002, 2003 Norman Walsh
+    http://sourceforge.net/projects/docbook/
+    
+    This version of Slides is based on "full" DocBook rather than
+    the Simplified DocBook XML DTD.
+    
+    $Id: slides-full.dtd,v 1.7 2005/04/26 13:55:32 xmldoc Exp $
+    
+    Please direct all questions and comments about this DTD to
+    Norman Walsh, <ndw@nwalsh.com>.
+    
+    Common declaration:
+    
+    <?xml version='1.0'?>
+    <!DOCTYPE slides
+      PUBLIC "-//Norman Walsh//DTD Slides Full XML V3.4//EN"
+      "http://docbook.sourceforge.net/release/slides/3.4/schema/dtd/slides-full.dtd">
+  -->
+  <!-- ====================================================================== -->
+  <define name="local.divcomponent.mix">
+    <ref name="speakernotes"/>
+  </define>
+  <define name="local.component.mix">
+    <ref name="speakernotes"/>
+  </define>
+  <!-- In this version, we use full DocBook -->
+  <include href="docbookx.rng"/>
+  <include href="slides.mod.rng"/>
+  <start>
+    <ref name="slides"/>
+  </start>
+</grammar>
+<!-- End of Slides Full XML V3.4 DTD .................................... -->
+<!-- ...................................................................... -->

@@ -1,0 +1,17 @@
+2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* .cvsignore: added ChangLog to .cvsignore files, so that I can do a "cvstrim"
+	without them getting deleted
+
+2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* Makefile: fixed param.html build
+
+2002-05-30  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* .cvsignore, Makefile, slides.xml: Documentation updates
+
+2002-05-29  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* slides.xml: New file.
+

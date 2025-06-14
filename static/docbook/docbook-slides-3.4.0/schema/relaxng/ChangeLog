@@ -1,0 +1,28 @@
+2005-04-27  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* .cvsignore: added ChangLog to .cvsignore files, so that I can do a "cvstrim"
+	without them getting deleted
+
+	* Makefile: maintainer-clean instead of realclean
+
+2005-04-26  Michael Smith <xmldoc@users.sourceforge.net>
+
+	* .cvsignore: ignore generated files
+
+	* Makefile: generate RELAX schemas from DTD sources
+
+2003-12-22  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* .cvsignore, Makefile, slides-full.rng, slides.rng, union.xml: 
+	Removed
+
+2003-01-24  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* slides-full.rng, slides.rng: Fix version numbers
+
+2003-01-23  Norman Walsh <nwalsh@users.sourceforge.net>
+
+	* .cvsignore, Makefile, slides.rng, union.xml: New file.
+
+	* slides-full.rng: New file.
+
