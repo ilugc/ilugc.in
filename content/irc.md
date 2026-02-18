@@ -1,11 +1,11 @@
 ---
-title: "ILUGC's Official IRC Channel"
+title: "ILUGC's Official Communication Channels"
 url: /chat
 date: 2020-08-24T04:48:16+05:30
 author: Mohan R
 ---
 
-You can chat with ILUGC to clear your queries/doubts or you can help others with your knowledge.
+You can chat with ILUGC members to clear your queries/doubts or you can help others with your knowledge.
 
 ## Matrix
 
