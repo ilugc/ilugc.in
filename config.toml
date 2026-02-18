@@ -29,26 +29,26 @@ enableRobotsTXT = true
 	weight = 10
 
 [[menu.main]]
+	name = "Chat"
+	url = "/chat/"
+	weight = 30
+
+[[menu.main]]
+	name = "Getting Started in FOSS"
+	url = "/getting-started/"
+	weight = 50
+
+[[menu.main]]
+	name = "Get Involved with ILUGC"
+	url = "/get-involved/"
+	weight = 60
+
+[[menu.main]]
 	name = "Contact"
 	url = "/contact/"
 	weight = 20
 
 [[menu.main]]
-	name = "IRC"
-	url = "/irc/"
-	weight = 30
-
-[[menu.main]]
 	name = "FAQ"
 	url = "/faq/"
 	weight = 40
-
-[[menu.main]]
-	name = "Getting Started"
-	url = "/getting-started/"
-	weight = 50
-
-[[menu.main]]
-	name = "Get Involved"
-	url = "/get-involved/"
-	weight = 60
