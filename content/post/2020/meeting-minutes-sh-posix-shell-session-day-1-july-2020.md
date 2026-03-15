@@ -23,4 +23,4 @@ Starting of the meet was a perfect storm. After much struggle we were able to br
 
 #### IRC Logs
 
-{{<gist mohan43u bee72e677c544dfcd5171d4ebbcbd931>}}
+https://gist.github.com/mohan43u/bee72e677c544dfcd5171d4ebbcbd931

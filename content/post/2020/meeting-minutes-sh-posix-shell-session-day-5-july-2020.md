@@ -38,4 +38,4 @@ Here are the topics covered on the last and final day of this session,
 
 #### IRC Logs
 
-{{<gist mohan43u 1db92fcf00e07b944de95a01beeaaab1>}}
+https://gist.github.com/mohan43u/1db92fcf00e07b944de95a01beeaaab1

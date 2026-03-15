@@ -47,4 +47,4 @@ Todays session started on time. As usual **Shrini** provided free shell account 
 
 #### IRC Logs
 
-{{<gist mohan43u ee8c305484f972f2e262ef67934bc332>}}
+https://gist.github.com/mohan43u/ee8c305484f972f2e262ef67934bc332

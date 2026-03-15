@@ -31,4 +31,4 @@ Here are the topics we covered on day four,
 
 #### IRC Logs
 
-{{<gist mohan43u 4ae51ce5026d5e6745dd5737d1293a18>}}
+https://gist.github.com/mohan43u/4ae51ce5026d5e6745dd5737d1293a18

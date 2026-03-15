@@ -40,7 +40,7 @@ Following are the important points discussed today about **'ed'**
 
 #### IRC Logs
 
-{{<gist mohan43u 5d44c71e97e254d36dd450137863c6ee>}}
+https://gist.github.com/mohan43u/5d44c71e97e254d36dd450137863c6ee
 
 #### Terminal Capture Logs
 

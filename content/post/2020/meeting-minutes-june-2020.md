@@ -48,4 +48,4 @@ Due to lack of time, presentation about ed is postponed. It will be organized as
 
 #### IRC Logs
 
-{{<gist mohan43u 795018fe19b35e41ee105a859aac308d>}}
+https://gist.github.com/mohan43u/795018fe19b35e41ee105a859aac308d
