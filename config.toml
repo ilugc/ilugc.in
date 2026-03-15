@@ -1,7 +1,7 @@
 baseURL = "https://ilugc.in/"
 languageCode = "en-us"
 title = "ILUGC"
-theme = "mainroad"
+theme = "roadster"
 enableRobotsTXT = true
 
 [Params]
