@@ -1,0 +1,30 @@
+{{- $tags := .Site.Taxonomies.tags }}
+{{- if gt (len $tags) 0 }}
+<div class="widget-taglist widget">
+    <h4 class="widget__title">{{ T "tags_title" }}</h4>
+    <div class="widget__content">
+        {{- $sortedTags := slice }}
+        {{- range $name, $taxonomy := $tags }}
+            {{- with $.Site.GetPage (printf "/tags/%s" $name) }}
+                {{- $sortedTags = $sortedTags | append (dict "name" .Title "taxonomy" $taxonomy "page" .) }}
+            {{- end }}
+        {{- end }}
+
+        {{- $sortOrder := (.Site.Params.widgets.tags_sort | default "asc") }}
+
+        {{- if eq $sortOrder "asc" }}
+            {{- $sortedTags = sort $sortedTags "name" }}
+        {{- else if eq $sortOrder "desc" }}
+            {{- $sortedTags = sort $sortedTags "name" "desc" }}
+        {{- else }}
+             {{- $sortedTags = sort $sortedTags "name" }}
+        {{- end }}
+
+        {{- range $tag := $sortedTags }}
+            <a class="widget-taglist__link widget__link btn" href="{{ $tag.page.RelPermalink }}" title="{{ $tag.page.Title }}">
+                {{- $tag.name -}}{{- if $.Site.Params.widgets.tags_counter }} ({{ $tag.taxonomy.Count }}){{ end -}}
+            </a>
+        {{- end }}
+    </div>
+</div>
+{{- end }}

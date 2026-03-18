@@ -1,0 +1,7 @@
+{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $v2Styles := resources.Get "css/v2-styles.css" | resources.ExecuteAsTemplate "css/v2-styles.css" . -}}
+<link rel="stylesheet" href="{{ $v2Styles.RelPermalink }}">
+{{ range .Site.Params.customCSS -}}
+<link rel="stylesheet" href="{{ . | relURL }}">
+{{- end }}

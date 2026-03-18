@@ -1,0 +1,1 @@
+<svg class="{{ with .class }}{{ . }} {{ end }}icon icon-mail" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3h24v18H0zm2 16h20V7l-10 6L2 7zM22 5H2l10 6z"/></svg>

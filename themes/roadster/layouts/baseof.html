@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.Language.Lang }}">
+<head>
+	{{- partial "head.html" . -}}
+</head>
+<body class="body">
+	<div class="container container--outer">
+		{{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+		<div class="wrapper flex">
+			<div class="primary">
+			{{ block "main" . }}
+				{{ with .Content }}
+				<div class="content main__content clearfix">
+					{{ . }}
+				</div>
+				{{ end }}
+			{{ end }}
+			</div>
+			{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
+		</div>
+		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+	</div>
+	<button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+		<span class="theme-toggle__label">Theme</span>
+	</button>
+<script async defer src="{{ "js/menu.js" | relURL }}"></script>
+{{ range .Site.Params.customJS -}}
+<script src="{{ . | relURL }}"></script>
+{{- end }}
+{{- partial "mathjax.html" . -}}
+</body>
+</html>
