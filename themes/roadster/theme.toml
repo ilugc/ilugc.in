@@ -1,0 +1,24 @@
+name = "Roadster"
+license = "MIT"
+licenselink = "https://github.com/mansoorbarri/roadster/blob/main/LICENSE"
+description = "A clean, content-first Hugo theme with modern publishing features."
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/mansoorbarri/roadster"
+
+# If you have a running demo of the theme.
+demosite = "https://roadster.mansoorbarri.com/"
+
+tags = ["Blog", "Light", "Responsive"]
+features = ["blog", "responsive", "multilingual", "widgets", "rss", "disqus", "google analytics", "wordpress"]
+
+# If the theme has a single author
+[author]
+    name = "Mansoor Barri"
+    homepage = "https://mansoorbarri.com"
+
+# If porting an existing theme
+[original]
+    author = "Mainroad"
+    homepage = "https://github.com/Vimux/Mainroad"
+    repo = "https://github.com/Vimux/Mainroad"

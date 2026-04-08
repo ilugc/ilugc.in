@@ -1,0 +1,93 @@
+{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
+
+.menu__link svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Nested Menu */
+.menu__item {
+  position: relative;
+}
+
+.menu__item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  background: var(--color-menu-bg);
+  box-shadow: 0 2px 5px var(--color-overlay-shadow);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  z-index: 1000;
+}
+
+.submenu__item {
+  border-top: 1px solid var(--color-menu-border);
+  position: relative;
+}
+
+.submenu__link {
+  color: var(--color-inverse-text);
+  display: block;
+  font-weight: 700;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease-out;
+}
+
+.submenu__link:hover {
+  background: {{ $highlightColor }};
+  color: var(--color-inverse-text);
+}
+
+.submenu .submenu {
+  display: none;
+  left: 100%;
+  top: 0;
+  width: 200px;
+  z-index: 1001;
+}
+
+.submenu__item:hover > .submenu {
+  display: block;
+}
+
+.has-submenu::after {
+  content: '▼';
+  margin-left: 5px;
+  font-size: 0.6em;
+  transition: transform 0.2s ease;
+}
+
+/* Mobile submenu toggle */
+@media screen and (max-width: 767px) {
+  .submenu {
+    position: static;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .submenu-open > .submenu {
+    display: block;
+    max-height: 500px;
+  }
+
+  .submenu-open > .has-submenu::after {
+    transform: rotate(180deg);
+  }
+
+  .submenu .submenu {
+    left: 0;
+    padding-left: 15px;
+  }
+}

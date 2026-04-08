@@ -1,0 +1,26 @@
+# NPM
+node_modules/
+npm-debug.log
+
+# IDE
+.idea
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+
+# OS
+._*
+Thumbs.db
+.DS_Store
+.Trashes
+.Spotlight-V100
+.AppleDouble
+.LSOverride
+Desktop.ini
+
+# dev
+public/
+hugo.toml
+content/
+.hugo_build.lock
+resources/

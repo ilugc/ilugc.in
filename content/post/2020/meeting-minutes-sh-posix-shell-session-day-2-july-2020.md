@@ -30,4 +30,4 @@ After the lessons from yesterday, we were able to make sure no random messages i
 
 #### IRC Logs
 
-{{<gist mohan43u 4d2a04a253ca043c67bd7e5839a33164>}}
+https://gist.github.com/mohan43u/4d2a04a253ca043c67bd7e5839a33164

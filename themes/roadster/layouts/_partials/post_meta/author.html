@@ -1,0 +1,6 @@
+{{- with .GetTerms "authors" }}
+	{{- range . }}
+		{{ partial "svg/author.svg" (dict "class" "meta__icon") }}
+		<span class="meta__text">{{ .Title }}</span>
+	{{- end }}
+{{- end }}
