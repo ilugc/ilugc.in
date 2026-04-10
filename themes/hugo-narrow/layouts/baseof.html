@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode }}" data-theme="{{ site.Params.colorScheme | default `default` }}">
+  <head>
+    {{ partial "layout/head.html" . }}
+    {{ $themeInit := resources.Get "js/theme-init.js" | resources.ExecuteAsTemplate "js/theme-init.js" . | minify }}
+    <script>{{ $themeInit.Content | safeJS }}</script>
+  </head>
+
+  {{- $contentWidth := .Site.Params.contentWidth | default `56rem` -}}
+  {{- $mainStyleAttr := printf `style="max-width: %s"` $contentWidth -}}
+
+
+  <body class="bg-background text-foreground min-h-screen antialiased">
+    <main class="mx-auto w-full" {{ $mainStyleAttr | safeHTMLAttr }}>
+      {{ partial "ui/reading-progress.html" . }}
+
+      {{ partial "navigation/header.html" . }}
+
+
+      <div class="px-4 py-6">
+        {{ partial "navigation/breadcrumb.html" . }}
+        {{ block "main" . }}{{ end }}
+      </div>
+
+      {{ partial "layout/footer.html" . }}
+      {{ partial "ui/dock.html" . }}
+      {{ partial "ui/toc.html" . }}
+      {{ partial "ui/search-modal.html" . }}
+      {{ partial "features/katex.html" . }}
+      {{ partial "features/mermaid.html" . }}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{{- if not .Parent -}}
+  {{- errorf "The %q shortcode must be nested inside tabs. See %s" .Name .Position -}}
+{{- end -}}
+
+{{- $lang := .Get "lang" | default (.Get 0) | default "" -}}
+{{- $fallbackLabel := cond (ne $lang "") ($lang | upper) (printf "Tab %d" (add .Ordinal 1)) -}}
+{{- $label := .Get "label" | default (.Get 1) | default $fallbackLabel -}}
+{{- $tabsBaseId := printf "tabs-%d" .Parent.Ordinal -}}
+{{- $panelId := printf "%s-panel-%d" $tabsBaseId .Ordinal -}}
+{{- $content := (.Inner | strings.TrimSpace) | markdownify -}}
+
+
+<section
+  id="{{ $panelId }}"
+  class="tabs-panel outline-none"
+  role="tabpanel"
+  data-tabs-panel
+  data-tab-label="{{ $label }}"
+  {{ if ne .Ordinal 0 }}hidden{{ end }}
+>
+  <div
+    class="tabs-panel-content px-4 pt-4 *:first:mt-0 *:last:mb-0 [&_.code-block-container:first-child]:mt-0 [&_.code-block-container:last-child]:mb-0"
+  >
+    {{ $content | safeHTML }}
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{{- $records := slice -}}
+{{- $mainSections := .Site.MainSections -}}
+
+{{- range where .Site.RegularPages "Section" "in" $mainSections -}}
+  {{- $summary := .Summary | plainify | strings.TrimSpace -}}
+  {{- if not $summary -}}
+    {{- $summary = .Plain | truncate 180 -}}
+  {{- end -}}
+
+  {{- $records = $records | append (dict
+    "title" .Title
+    "summary" $summary
+    "content" .Plain
+    "permalink" .RelPermalink
+    "section" .Section
+    "date" (.Date | time.Format ":date_medium")
+    "readingTime" .ReadingTime
+    "tags" (.Params.tags | default (slice))
+    "categories" (.Params.categories | default (slice))
+    )
+  -}}
+{{- end -}}
+
+{{- $records | jsonify -}}

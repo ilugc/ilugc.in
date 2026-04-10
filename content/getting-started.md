@@ -1,6 +1,5 @@
 ---
 title: "Getting Started"
-date: 2023-01-19T22:20:00+05:30
 url: /getting-started
 ---
 
@@ -8,7 +7,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 
  
 
-## Where it all started:
+### Where it all started:
 
 * [The Free Software Foundation](https://www.fsf.org/)
 * [The GNU Project](https://www.gnu.org/)
@@ -22,7 +21,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [Open Image Format](http://www.libpng.org/pub/png/)
 
 
-## Where you should start:
+### Where you should start:
 
 * [Linux.org](https://www.linux.org/)
 * [Linux.com](https://www.linux.com/)
@@ -31,7 +30,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [ILUGC ODOC](https://www.livejournal.com/community/ilugc/)
 
 
-## News sites:
+### News sites:
 
 * [Slashdot](https://slashdot.org/)
 * [Linux Today](https://www.linuxtoday.com/)
@@ -40,7 +39,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [Daemon News](http://www.daemonnews.org/)
 
 
-## E-zines:
+### E-zines:
 
 * [FSF Magazine](http://www.freesoftwaremagazine.com/)
 * [Open Source For You](https://www.opensourceforu.com/)
@@ -54,7 +53,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 
 
 
-## Which distribution should I use?
+### Which distribution should I use?
 
 * [Linux Mint](https://linuxmint.com/)
 * [Slackware](http://www.slackware.com/)
@@ -69,7 +68,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * ... [and many more](https://distrowatch.com/)
 
 
-## Graphical User Environments:
+### Graphical User Environments:
 
 * [X.Org](https://www.x.org/) – X Window System
 * [XFree86](http://www.xfree86.org/) – X Window System
@@ -79,20 +78,20 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * ... [and many more](http://www.xwinman.org/)
 
 
-## What, no applications?
+### What, no applications?
 
 * [FSF Resource](https://directory.fsf.org/)
 * [SourceForge](https://sourceforge.net/)
 * [Freshmeat](https://freshmeat.net/)
 * [Savannah](http://savannah.nongnu.org/)
 
-## Few tamil open source and linux community
+### Few tamil open source and linux community
 
 * [Tamil Linux Community](https://forums.tamillinuxcommunity.org/)
 * [Villupuram GLUG](https://vglug.org/)
 * [KanchiLUG](https://kanchilug.wordpress.com/)
 
-## FOSS Organizations in India
+### FOSS Organizations in India
 
 * [FSF-India](https://www.gnu.org.in/)
 * [Kaniyam](https://www.kaniyam.com/)
@@ -102,7 +101,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [FSMI](https://fsmi.in/)
 
 
-## Other ILUG’s
+### Other ILUG’s
 
 * Trichy
 * Madurai

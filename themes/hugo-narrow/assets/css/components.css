@@ -1,0 +1,124 @@
+/* Imported via @layer components in assets/css/main.css */
+.dropdown-menu {
+  min-width: 10rem;
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+/* 导航子菜单 */
+.nav-submenu {
+  min-width: 10rem;
+}
+
+.search-result-selected {
+  @apply bg-primary/10 text-primary;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+@media (max-width: 480px) {
+  #dock span {
+    display: none;
+  }
+}
+
+/* 悬浮模式下的 Dock 样式 */
+#dock[data-dock-mode="float"] {
+  transition: all 0.2s ease-out;
+}
+
+/* 当dock显示时，调整阴影遮罩 */
+#dock[data-dock-mode="float"].translate-y-0 ~ #dock-float-trigger .bg-gradient-to-t {
+  height: 12px;
+}
+
+/* 当dock显示时，图标旋转 */
+#dock[data-dock-mode="float"].translate-y-0 ~ #dock-float-trigger #dock-float-icon {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-out;
+}
+
+/* 响应式优化 */
+@media (max-width: 640px) {
+  #dock[data-dock-mode="float"] {
+    left: 1rem;
+    right: 1rem;
+    transform: translateX(0) translateY(24px);
+  }
+
+  #dock[data-dock-mode="float"].translate-y-0 {
+    transform: translateX(0) translateY(0);
+  }
+
+  #dock[data-dock-mode="float"].translate-y-24 {
+    transform: translateX(0) translateY(24px);
+  }
+}
+
+.link-card {
+  @apply bg-card border-border mb-2 rounded-lg border p-4 transition-all duration-200 hover:scale-105;
+  flex: 1 1 calc(33.333% - 1rem);
+}
+.link-card-title {
+  @apply text-foreground hover:text-primary m-0 truncate p-0 text-sm font-semibold transition-colors;
+}
+.link-card-content {
+  @apply text-muted-foreground m-0 mt-1 line-clamp-2 p-0 text-xs leading-relaxed;
+}
+.link-card-url {
+  @apply text-muted-foreground m-0 mt-1 truncate p-0 font-mono text-xs opacity-70;
+}
+.link-card-arrow {
+  @apply text-muted-foreground group-hover:text-primary flex-shrink-0 transition-colors;
+}
+.link-card a::before {
+  display: none;
+}
+.link-card a::after {
+  display: none;
+}
+.link-card-group {
+  @apply flex w-full flex-wrap gap-4;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.link-card-group .link-card:only-child {
+  flex: 0 0 auto;
+  @apply mx-auto w-full max-w-md;
+}
+.link-card-error {
+  @apply bg-muted/10 border-muted/20 text-muted rounded-lg border p-4;
+  @apply mx-auto w-full max-w-md;
+}
+.link-card-error p {
+  @apply mb-2 last:mb-0;
+}
+.link-card-error ul {
+  @apply list-inside list-disc space-y-1 text-sm;
+}

@@ -1,0 +1,76 @@
+baseURL: https://example.org/
+languageCode: en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+title: Hugo Narrow
+theme: "hugo-narrow"
+
+hasCJKLanguage: true
+enableEmoji: true
+
+
+# Main Section Configuration (Optional)
+# If not configured, Hugo will automatically select the section with the most pages
+# This configuration affects functions such as recent articles on the homepage, search index, and archive pages
+mainSections: ["posts"]  # Multiple values can be configured, e.g. ["posts", "blog", "articles"]
+
+permalinks:
+  posts: /posts/:slug/
+  projects: /projects/:slug/
+  pages: /:slug/
+
+# pagination
+pagination:
+  pagerSize: 6
+  path: "page"
+
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      extras:
+        delete:
+          enable: true
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true   
+      strikethrough: true 
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    lineNumbersInTable: false # Set to false
+    noClasses: false
+    style: github # No need to change
+    tabWidth: 2
+
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+# Custom output formats
+outputFormats:
+  WebAppManifest:
+    mediaType: "application/manifest+json"
+    baseName: "site"
+    isPlainText: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.146.0

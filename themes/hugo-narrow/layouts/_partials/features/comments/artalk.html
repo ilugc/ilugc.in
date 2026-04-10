@@ -1,0 +1,72 @@
+{{/* Artalk 评论系统组件
+
+  自托管的评论系统，功能丰富且可定制
+
+  @context {page} . 当前文章页面对象
+  @param {string} id 评论容器的唯一 ID
+*/}}
+
+{{ $id := .id | default "artalk-comments" }}
+{{ $config := .Site.Params.comments.artalk }}
+
+{{ if $config.server }}
+  <div id="{{ $id }}" class="artalk-container"></div>
+  {{/* 加载 Artalk CSS */}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.css" />
+
+  <script type="module">
+    import Artalk from 'https://esm.sh/artalk@2.9.1'
+
+    // 初始化 Artalk
+    const artalk = Artalk.init({
+      el: '#{{ $id }}',
+      pageKey: '{{ .Page.RelPermalink }}',
+      pageTitle: '{{ .Page.Title | safeJS }}',
+      server: '{{ $config.server }}',
+      site: '{{ $config.site | default .Site.Title }}',
+      locale: '{{ $config.locale | default .Site.Language.LanguageCode | default "zh-CN" }}',
+      darkMode: '{{ $config.darkMode | default "auto" }}',
+      gravatar: {
+        mirror: '{{ $config.gravatar.mirror | default "https://cravatar.cn/avatar/" }}'
+      },
+    });
+
+    // 主题切换支持
+    function updateArtalkTheme() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const theme = isDark ? 'dark' : 'light';
+
+      // 更新 Artalk 主题
+      artalk.setDarkMode(theme);
+    }
+
+    // 监听主题切换事件
+    document.addEventListener('themeChanged', updateArtalkTheme);
+
+    // 监听 DOM 变化（用于检测主题切换）
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          updateArtalkTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    // 初始化时设置主题
+    updateArtalkTheme();
+  </script>
+{{ else }}
+  <div id="{{ $id }}" class="py-8 text-center">
+    <div class="bg-muted/50 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+      {{ partial "features/icon.html" (dict "name" "server" "size" "lg" "ariaLabel" "") }}
+    </div>
+    <h3 class="text-foreground mb-2 text-lg font-medium">
+      {{ T "comments.notConfigured" }}
+    </h3>
+  </div>
+{{ end }}
