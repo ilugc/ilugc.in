@@ -1,0 +1,32 @@
+{{/* Gallery 配置管理 - 重构版 */}}
+{{ $globalGallery := site.Params.gallery | default dict }}
+{{ $globalLightbox := site.Params.lightbox | default dict }}
+
+{{ $pageGallery := .Params.gallery | default dict }}
+{{ $pageLightbox := .Params.lightbox | default dict }}
+
+{{/* 计算最终配置 */}}
+{{ $galleryEnabled := cond (isset $pageGallery "enabled") $pageGallery.enabled ($globalGallery.enabled | default false) }}
+{{ $lightboxEnabled := cond (isset $pageLightbox "enabled") $pageLightbox.enabled ($globalLightbox.enabled | default false) }}
+{{ $pageHasImageFigure := .Store.Get "hasImageFigure" | default false }}
+{{ $pageHasLightboxFigure := .Store.Get "hasLightboxFigure" | default false }}
+
+{{/* 合并配置对象 */}}
+{{ $galleryConfig := $globalGallery }}
+{{ if $pageGallery }}
+  {{ $galleryConfig = merge $galleryConfig $pageGallery }}
+{{ end }}
+
+{{/* 处理配置值 - 规范化键名为 camelCase */}}
+{{ $cleanGalleryConfig := dict }}
+{{ range $key, $value := $galleryConfig }}
+  {{ if ne $key "enabled" }}
+    {{ $cleanGalleryConfig = merge $cleanGalleryConfig (dict $key $value) }}
+  {{ end }}
+{{ end }}
+
+{{- return dict
+  "gallery" (and $galleryEnabled $pageHasImageFigure)
+  "lightbox" (and $lightboxEnabled (or $pageHasImageFigure $pageHasLightboxFigure))
+  "galleryOptions" $cleanGalleryConfig
+-}}

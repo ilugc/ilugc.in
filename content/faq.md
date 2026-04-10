@@ -1,6 +1,5 @@
 ---
 title: "FAQ / Frequently Asked Questions"
-date: 2017-08-11T23:58:08+05:30
 url: /faq
 ---
 

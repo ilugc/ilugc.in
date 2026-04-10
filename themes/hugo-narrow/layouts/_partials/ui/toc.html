@@ -1,0 +1,71 @@
+{{- $tocConfig := partial "config/toc.html" . -}}
+{{- if and $tocConfig.enabled (ne .TableOfContents `<nav id="TableOfContents"></nav>`) -}}
+  <aside
+    id="toc-container"
+    class="toc-{{ $tocConfig.position }}"
+    data-position="{{ $tocConfig.position }}"
+  >
+    {{- if eq $tocConfig.position "center" -}}
+      <!-- Center 模式 TOC -->
+      <div
+        id="toc-center"
+        class="pointer-events-none fixed top-28 right-0 left-0 z-40 mx-auto w-full max-w-4xl px-4 transition-all duration-300"
+      >
+        <div class="pointer-events-auto relative mx-auto w-fit">
+          <button
+            id="toc-center-toggle"
+            class="bg-card/80 border-border text-muted-foreground hover:text-primary hover:bg-primary/10 ring-offset-background focus-visible:ring-ring flex cursor-pointer items-center gap-2 rounded-full border px-4 py-1.5 text-sm shadow-sm backdrop-blur-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+          >
+            {{ partial "features/icon.html" (dict "name" "list" "size" "sm" "ariaLabel" "") }}
+            <span id="toc-center-title" class="max-w-[200px] truncate">{{ T "ui.toc" }}</span>
+            {{ partial "features/icon.html" (dict "name" "chevron-down" "size" "xs" "ariaLabel" "") }}
+          </button>
+
+          <!-- Dropdown 内容 -->
+          <div
+            id="toc-center-dropdown"
+            class="bg-card border-border scrollbar-hide absolute top-full left-1/2 mt-2 hidden max-h-[60vh] w-[280px] origin-top -translate-x-1/2 scale-95 overflow-y-auto rounded-xl border p-4 opacity-0 shadow-lg transition-all"
+          >
+            <div
+              id="toc-center-content"
+              class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:truncate [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
+            >
+              {{ .TableOfContents }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{- else if eq $tocConfig.position "side" -}}
+      <!-- Side 模式 TOC -->
+      <div id="toc-side" class="fixed top-24 right-0 z-40 flex flex-col items-end">
+        <!-- 侧边指示色块区 -->
+        <div
+          id="toc-side-indicator"
+          class="relative flex h-[calc(100vh-12rem)] max-h-[400px] w-6 cursor-ns-resize flex-col items-end gap-0.5 py-4"
+        ></div>
+
+        <!-- Hover 悬浮的详细目录卡片 -->
+        <div
+          id="toc-side-dropdown"
+          class="bg-card border-border scrollbar-hide pointer-events-none absolute top-0 right-0 max-h-[80vh] w-64 translate-x-8 overflow-y-auto rounded-l-xl border-y border-l p-4 opacity-0 shadow-xl transition-all duration-300 md:w-80 [&.is-open]:pointer-events-auto [&.is-open]:translate-x-0 [&.is-open]:opacity-100"
+        >
+          <div class="text-foreground mb-3 flex items-center justify-between text-sm font-bold">
+            <span>{{ T "ui.toc" }}</span>
+            <button
+              id="toc-side-close"
+              class="text-muted-foreground hover:text-foreground hidden rounded p-1 [&.is-touch]:block"
+            >
+              {{ partial "features/icon.html" (dict "name" "close" "size" "xs" "ariaLabel" "") }}
+            </button>
+          </div>
+          <div
+            id="toc-side-content"
+            class="[&_a]:text-muted-foreground [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary text-sm [&_a]:block [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:wrap-break-word [&_a]:whitespace-normal [&_a]:transition-colors [&_a.active]:font-medium [&_li]:my-1.5 [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4"
+          >
+            {{ .TableOfContents }}
+          </div>
+        </div>
+      </div>
+    {{- end -}}
+  </aside>
+{{- end -}}

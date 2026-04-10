@@ -1,0 +1,114 @@
+main:
+  - name: Posts
+    pageRef: /posts
+    weight: 10
+    params:
+      icon: posts
+
+  # - name: Archives
+  #   pageRef: /archives
+  #   weight: 20
+  #   params:
+  #     icon: archive
+  
+  - name: About
+    pageRef: /about
+    weight: 20
+    params:
+      icon: about
+
+  - name: Contact
+    pageRef: /contact-us
+    weight: 20
+    params:
+      icon: contact
+
+  - name: FAQ
+    pageRef: /faq
+    weight: 20
+    params:
+      icon: categories
+
+  - name: More
+    weight: 30
+    params:
+      icon: layers
+
+  - name: Getting Started
+    pageRef: /getting-started
+    parent: More
+    weight: 20
+
+  - name: Contribute
+    pageRef: /contribute
+    parent: More
+    weight: 20
+
+  # Example: parent item with dropdown submenu children
+  # - name: More
+  #   weight: 30
+  #   params:
+  #     icon: layers
+
+  # - name: Categories
+  #   weight: 1
+  #   pageRef: /categories
+  #   parent: More
+  #   params:
+  #     icon: categories
+
+  # - name: Tags
+  #   weight: 2
+  #   pageRef: /tags
+  #   parent: More
+  #   params:
+  #     icon: tags
+
+  # - name: Series
+  #   weight: 3
+  #   pageRef: /series
+  #   parent: More
+  #   params:
+  #     icon: bookmark
+
+  # - name: Projects
+  #   weight: 4
+  #   pageRef: /projects
+  #   parent: More
+  #   params:
+  #     icon: projects
+
+
+
+# footer menu
+footer:
+  # - name: Timeline
+  #  pageRef: /timeline
+  #  weight: 10
+  #  params:
+  #    icon: chart
+
+  # - name: About
+  #   pageRef: /about
+  #   weight: 20
+  #   params:
+  #     icon: about
+
+  - name: RSS Feed
+    url: /index.xml
+    weight: 30
+    params:
+      icon: rss
+
+# footer social link
+social:
+  - name: GitHub
+    url: https://github.com/ilugc
+    weight: 10
+    params:
+      icon: github
+  # - name: Email
+  #   url: mailto:your.email@example.com
+  #   weight: 40
+  #   params:
+  #     icon: email

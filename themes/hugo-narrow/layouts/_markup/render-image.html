@@ -1,0 +1,88 @@
+{{/* Hugo Markdown 图片渲染器
+  处理业务逻辑：灯箱功能、类名、结构等
+*/}}
+
+{{- $pageContext := .PageInner | default .Page -}}
+{{- $dest := .Destination | safeURL -}}
+{{- $alt := .Text -}}
+{{- $caption := .Title -}}
+
+{{/* 检查是否启用灯箱功能 */}}
+{{- $globalLightbox := site.Params.lightbox | default dict -}}
+{{- $pageLightbox := .Page.Params.lightbox | default dict -}}
+{{- $lightboxEnabled := false -}}
+{{- $pageContext.Store.Set "hasImageFigure" true -}}
+{{- .Page.Store.Set "hasImageFigure" true -}}
+
+{{/* 优先使用页面级配置，然后是全局配置 */}}
+{{- if isset $pageLightbox "enabled" -}}
+  {{- $lightboxEnabled = $pageLightbox.enabled -}}
+{{- else if isset $globalLightbox "enabled" -}}
+  {{- $lightboxEnabled = $globalLightbox.enabled -}}
+{{- end -}}
+
+{{- if $lightboxEnabled -}}
+  {{- $pageContext.Store.Set "hasLightboxFigure" true -}}
+  {{- .Page.Store.Set "hasLightboxFigure" true -}}
+{{- end -}}
+
+{{/* 使用图片处理器获取数据 */}}
+{{- partial "content/image-processor.html" (dict
+  "context" $pageContext
+  "src" $dest
+  "alt" $alt
+  "caption" $caption
+  "enablePlaceholder" false
+  "outputType" "data"
+  )
+-}}
+
+{{/* 获取处理结果 */}}
+{{- $imageUrl := $pageContext.Scratch.Get "imageUrl" -}}
+{{- $imageResource := $pageContext.Scratch.Get "imageResource" -}}
+{{- $isExternal := $pageContext.Scratch.Get "isExternal" -}}
+
+{{/* 获取图片尺寸 */}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- if and $imageResource (not $isExternal) -}}
+  {{- $mediaType := $imageResource.MediaType.SubType -}}
+  {{- if in (slice "jpeg" "jpg" "png" "gif" "webp") $mediaType -}}
+    {{- $width = $imageResource.Width -}}
+    {{- $height = $imageResource.Height -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 生成 figure 元素 */}}
+<figure
+  class="image-figure not-prose my-8"
+  data-lightbox-enabled="{{ if $lightboxEnabled }}
+    true
+  {{ else }}
+    false
+  {{ end }}"
+  data-gallery-type="auto"
+  data-image-width="{{ $width }}"
+  data-image-height="{{ $height }}"
+  data-image-src="{{ $imageUrl }}"
+>
+  <div class="image-container">
+    {{/* 使用图片处理器生成图片HTML */}}
+    {{- partial "content/image-processor.html" (dict
+      "context" $pageContext
+      "src" $dest
+      "alt" $alt
+      "caption" $caption
+      "enablePlaceholder" false
+      "outputType" "img"
+      )
+    -}}
+  </div>
+
+  {{/* 图片说明 */}}
+  {{- if $caption -}}
+    <figcaption class="image-caption">
+      {{ $caption | .Page.RenderString }}
+    </figcaption>
+  {{- end -}}
+</figure>

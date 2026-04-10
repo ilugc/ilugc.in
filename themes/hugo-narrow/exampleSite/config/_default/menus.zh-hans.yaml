@@ -1,0 +1,91 @@
+main:
+  - name: 文章
+    pageRef: /posts
+    weight: 10
+    params:
+      icon: posts
+
+  - name: 归档
+    pageRef: /archives
+    weight: 20
+    params:
+      icon: archive
+
+  # Example: parent item with dropdown submenu children
+  - name: 更多
+    weight: 30
+    params:
+      icon: layers
+
+  - name: 标签
+    weight: 1
+    pageRef: /tags
+    parent: 更多
+    params:
+      icon: tags
+
+  - name: 分类
+    weight: 2
+    pageRef: /categories
+    parent: 更多
+    params:
+      icon: categories
+
+  - name: 系列
+    weight: 3
+    pageRef: /series
+    parent: 更多
+    params:
+      icon: bookmark
+
+  - name: 项目
+    weight: 4
+    pageRef: /projects
+    parent: 更多
+    params:
+      icon: projects
+
+
+
+# footer menu
+footer:
+  - name: 时间线
+    pageRef: /timeline
+    weight: 10
+    params:
+      icon: chart
+
+  - name: 关于
+    pageRef: /about
+    weight: 20
+    params:
+      icon: about
+
+  - name: RSS 订阅
+    url: /index.xml
+    weight: 30
+    params:
+      icon: rss
+
+# 页脚社交链接
+social:
+  - name: GitHub
+    url: https://github.com/username
+    weight: 10
+    params:
+      icon: github
+  - name: Twitter
+    url: https://twitter.com/username
+    weight: 20
+    params:
+      icon: twitter
+  - name: LinkedIn
+    url: https://linkedin.com/in/username
+    weight: 30
+    params:
+      icon: linkedin
+  - name: 邮箱
+    url: mailto:your.email@example.com
+    weight: 40
+    params:
+      icon: email

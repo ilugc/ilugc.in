@@ -1,0 +1,226 @@
+# Basic site info with SEO
+description: "Indian Linux Users Group Chennai"
+keywords: ["Hugo", "Technology", "Programming", "Linux Community", "Chennai"]
+defaultAuthor: "ILUGC"
+language: "en"
+shortName: "ILUGC" # PWA
+
+# images:
+#   - "/images/og-default.avif"
+
+# Favicon
+# favicon:
+#   svg: "/favicon.png" # SVG format favicon (recommended)
+
+# Author info
+author:
+  name: "ILUGC"
+  title: "Indian Linux Users Group Chennai"
+  # description: ""
+  # avatar: "/logo.png"
+  social:
+    - name: "GitHub"
+      url: "https://github.com/ilugc"
+      icon: "github"
+
+# Header configuration (modularized)
+header:
+  sticky: false # Enable sticky navigation bar
+  logo:
+    image: "" # Logo path relative to static folder, leave empty to use site title first letter
+    link: "/" # Click to home page
+  # UI Components Control (header controls)
+  showThemeSwitch: false # Set to false to hide theme style switcher (palette icon)
+  showDarkModeSwitch: false # Set to false to hide dark mode switcher (sun/moon icon)
+  showLanguageSwitch: false # Set to false to hide language switcher
+  languageSwitchMode: "cycle" # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
+
+# Dock display mode
+# Options: "scroll" (show on scroll up), "always" (always visible), "float" (floating button)
+dock: "scroll"
+
+# Content width
+# The ,max content width is set to "56rem" by default, which is a good balance between readability and aesthetics.
+# You can change it to "56rem" to make the content wider, or "48rem" to make it narrower.
+contentWidth: "56rem"
+
+# TOC (Table of Contents)
+toc:
+  enabled: true # Enable or disable TOC globally
+  position: "slide" # Options: center | side
+
+# Default color scheme
+colorScheme: "crimson"
+themes:
+  default:
+    name: "Default"
+    order: 1
+  claude:
+    name: "Claude"
+    order: 2
+  bumblebee:
+    name: "Bumblebee"
+    order: 3
+  emerald:
+    name: "Emerald"
+    order: 4
+  nord:
+    name: "Nord"
+    order: 5
+  sunset:
+    name: "Sunset"
+    order: 6
+  abyss:
+    name: "Abyss"
+    order: 7
+  dracula:
+    name: "Dracula"
+    order: 8
+  amethyst:
+    name: "Amethyst"
+    order: 9
+  slate:
+    name: "Slate"
+    order: 10
+  twitter:
+    name: "Twitter"
+    order: 11
+  minimal:
+    name: "Minimal"
+    order: 12
+  crimson:
+    name: "Crimson"
+    order: 13
+
+# Home page configuration
+home:
+  recentPostsCount: 5 # Number of recent posts to show on the home page
+
+  # Content order configuration - customize the order of home page sections
+  # Available sections: author-section, recent-posts, featured-projects, page-content
+  # You can add your custom content by creating files in `layouts/_partials/home/` folder, then add it to the list
+  #
+  contentOrder:
+    - author-section
+    - page-content
+    - recent-posts
+    - featured-projects.html
+
+# Post configuration
+post:
+  showRelated: true # show related posts
+  relatedPostsCount: 3 # posts number
+  license:
+    show: false
+    author: "ILUGC"
+    name: "CC BY-NC-SA 4.0"
+    description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
+    url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    displayName: "CC BY-NC-SA 4.0"
+
+# Comments
+comments:
+  enabled: false
+  # giscus, disqus, utterances, waline, artalk, twikoo
+  system: "giscus"
+  giscus:
+    repo: "tom2almighty/hugo-narrow-giscus"
+    repoId: "R_kgDOO2gwLg"
+    category: "General"
+    categoryId: "DIC_kwDOO2gwLs4CrEaf"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "en"
+  disqus:
+    shortname: ""
+  utterances:
+    repo: ""
+    issueTerm: "pathname"
+    label: "comment"
+    theme: "preferred-color-scheme"
+  waline:
+    serverURL: ""
+    lang: "zh-CN"
+  artalk:
+    server: ""
+    site: ""
+    locale: "zh-CN" # String|Object|"auto"
+    darkMode: "auto"
+    gravatar:
+      mirror: "https://cravatar.cn/avatar/"
+  twikoo:
+    envId: ""
+    region: "ap-shanghai"
+    path: ""
+    lang: "zh-CN"
+
+# Analytics
+analytics:
+  enabled: false
+  baidu:
+    enabled: false
+    id: "your-baidu-analytics-id"
+  clarity:
+    enabled: false
+    id: "your-clarity-analytics-id"
+  google:
+    enabled: false
+    id: "your-google-analytics-id"
+  umami:
+    enabled: false
+    id: "your-umami-website-id"
+    src: "https://umami.com/myscript.js"
+    domains: "example.domain.com"
+
+# KaTeX
+katex:
+  enabled: true
+  delimiters:
+    - left: "$$"
+      right: "$$"
+      display: true
+    - left: "$"
+      right: "$"
+      display: false
+    - left: "\\("
+      right: "\\)"
+      display: false
+    - left: "\\["
+      right: "\\]"
+      display: true
+
+# Mermaid
+mermaid:
+  enabled: true
+
+# Gallery 配置
+gallery:
+  enabled: true
+  defaultLayout: justified # justified, masonry, grid
+  gap: 10
+  targetRowHeight: 200
+  lastRowBehavior: center # left, center, right, fill, hide
+  columnWidth: 200
+  columns: 4 # auto 或具体数字
+
+# Lightbox
+lightbox:
+  enabled: true
+
+# Code block
+codeblock:
+  collapse:
+    enabled: true
+    defaultState: expanded # expanded, collapsed
+    autoCollapseLines: 30
+    autoCollapseHeight: 400
+    collapsedHeight: 120
+
+# Reading progress
+readingProgress:
+  enabled: true
+  showOnHomepage: false

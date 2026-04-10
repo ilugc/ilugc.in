@@ -1,0 +1,85 @@
+{{/* 图片处理器 */}}
+
+{{- $context := .context -}}
+{{- $src := .src | string -}}
+{{- $alt := .alt | default "" -}}
+{{- $caption := .caption | default "" -}}
+{{- $enablePlaceholder := .enablePlaceholder | default true -}}
+{{- $outputType := .outputType | default "both" -}}
+
+{{/* 初始化核心变量 */}}
+{{- $resource := false -}}
+{{- $resourceType := "" -}}
+{{- $isExternal := false -}}
+{{- $finalUrl := "" -}}
+{{- $searchPath := $src -}}
+{{- $isRootRelative := hasPrefix $src "/" -}}
+
+{{/* 检查是否为外部URL */}}
+{{- if or
+  (hasPrefix $src "http://")
+  (hasPrefix $src "https://")
+  (hasPrefix $src "data:")
+  (hasPrefix $src "blob:")
+-}}
+  {{- $isExternal = true -}}
+  {{- $resourceType = "external" -}}
+  {{- $finalUrl = $src -}}
+{{- else -}}
+  {{/* 统一路径格式，避免带前导 / 的 relURL 在子路径站点下失效 */}}
+  {{- if hasPrefix $src "./" -}}
+    {{- $searchPath = strings.TrimPrefix "./" $src -}}
+  {{- else if hasPrefix $src "/" -}}
+    {{- $searchPath = strings.TrimPrefix "/" $src -}}
+  {{- end -}}
+
+  {{/* 根路径只查全局资源或静态文件；相对路径优先查页面资源 */}}
+  {{- if not $isRootRelative -}}
+    {{- with $context.Resources.GetMatch $searchPath -}}
+      {{- $resource = . -}}
+      {{- $resourceType = "page" -}}
+      {{- $finalUrl = .RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if not $resource -}}
+    {{- with resources.Get $searchPath -}}
+      {{- $resource = . -}}
+      {{- $resourceType = "global" -}}
+      {{- $finalUrl = .RelPermalink -}}
+    {{- else -}}
+      {{- $resourceType = "static" -}}
+      {{- $finalUrl = $searchPath | relURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 设置核心数据到上下文 */}}
+{{- if or (eq $outputType "data") (eq $outputType "both") -}}
+  {{- $context.Scratch.Set "imageResource" $resource -}}
+  {{- $context.Scratch.Set "imageUrl" $finalUrl -}}
+  {{- $context.Scratch.Set "imageType" $resourceType -}}
+  {{- $context.Scratch.Set "isExternal" $isExternal -}}
+{{- end -}}
+
+{{/* 生成图片HTML */}}
+{{- if or (eq $outputType "img") (eq $outputType "both") -}}
+  <img
+    src="{{ $finalUrl }}"
+    alt="{{ $alt }}"
+    {{ with $caption }}title="{{ . }}"{{ end }}
+    {{ if and $resource (not $isExternal) }}
+      {{ $mediaType := $resource.MediaType.SubType }}
+      {{ if in (slice "jpeg" "jpg" "png" "gif" "webp" "svg") $mediaType }}
+        {{ if ne $mediaType "svg" }}
+          width="{{ $resource.Width }}" height="{{ $resource.Height }}"
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    loading="lazy"
+    decoding="async"
+    data-gallery-src="{{ $finalUrl }}"
+    data-gallery-alt="{{ $alt }}"
+    data-gallery-title="{{ $caption }}"
+  />
+{{- end -}}

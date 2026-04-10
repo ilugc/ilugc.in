@@ -1,0 +1,55 @@
+{{ define "main" }}
+  <!-- 文章封面 -->
+  {{- if .Params.cover -}}
+    {{/* 使用通用图片处理器 */}}
+    {{- partial "content/image-processor.html" (dict
+      "context" .
+      "src" .Params.cover
+      "alt" .Title
+      "enableModal" false
+      "enableResponsive" true
+      "enablePlaceholder" false
+      "outputType" "data"
+      )
+    -}}
+    {{- $coverImage := .Scratch.Get "imageUrl" -}}
+
+    {{- if $coverImage -}}
+      <div class="mb-8 overflow-hidden rounded-2xl">
+        <img
+          src="{{ $coverImage }}"
+          alt="{{ .Title }}"
+          class="aspect-video max-h-[50vh] w-full object-cover md:max-h-[60vh]"
+          loading="eager"
+        />
+      </div>
+    {{- end -}}
+  {{ end }}
+
+
+  <!-- 文章头部信息 -->
+  <header class="mb-8">
+    {{ partial "content/post-meta.html" . }}
+  </header>
+
+  <!-- 文章内容 -->
+  <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
+    {{ .Content }}
+  </article>
+
+  <!-- 许可证信息 -->
+  {{ partial "content/post-license.html" . }}
+
+
+  <!-- 上一篇/下一篇导航 -->
+  {{ partial "content/post-navigation.html" . }}
+
+
+  <!-- 相关文章 -->
+  {{ partial "content/related-posts.html" . }}
+
+
+  <!-- 评论组件 -->
+  {{ partial "features/comments.html" . }}
+
+{{ end }}
