@@ -19,4 +19,3 @@ It would be nice to have a list of all meetups that happened in ILUGC.
 1. Fork this repository to your own Github account.
 2. Make your changes in your copy of the repository.
 3. Create a new Pull Request.
-

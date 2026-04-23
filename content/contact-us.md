@@ -5,7 +5,15 @@ aliases:
   - /contact-us
 ---
 
-You can chat with ILUGC members to clear your queries/doubts or you can help others with your knowledge.
+You can reach out to ILUGC members to clear your queries/doubts or you can help others with your knowledge.
+
+### Mailing list
+
+Subscribe to [ILUGC Mailing List](https://www.freelists.org/list/ilugc) to get Monthly Meeting information, you can also interact with ILUGC members through e-mail.
+
+### Meetup.com
+
+Meeting details are also shared through [Meetup.com](https://www.meetup.com/ilug-c/)
 
 ### Matrix
 
@@ -22,9 +30,6 @@ People from ILUGC community hang in **#ilugc** channel on **[Libera.Chat](https:
 | Channel                         | IRC Network Address |
 | :------------------------------ | :------------------ |
 | [#ilugc](https://web.libera.chat/?channel=#ilugc) | irc.libera.chat |
-
-
-You can also contact an ILUGC member through the [ILUGC Mailing List](https://www.freelists.org/list/ilugc). If you are not an member of ILUGC mailing list, then you can contact the co-ordinator for specific help.
 
 ### Talk/Seminar/Workshop
 
