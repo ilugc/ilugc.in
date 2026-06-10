@@ -1,8 +1,8 @@
----
++++
 title = 'ILUGC Social Meet - OSM Mapping Party, 6th Jun 2026'
 author = "Gopinathan Asokan" 
 date = '2026-06-06T17:24:49+05:30'
----
++++
 
 Here is the quick recap of what happend in the ILUGC social meet - OSM mapping party, June 06, 2026
 
