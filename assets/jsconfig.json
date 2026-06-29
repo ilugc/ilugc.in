@@ -1,6 +1,5 @@
 {
  "compilerOptions": {
-  "baseUrl": ".",
   "paths": {
    "*": [
     "../themes/hugo-narrow/assets/*"
