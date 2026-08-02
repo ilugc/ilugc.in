@@ -1,5 +1,5 @@
 {{/* nextmeet.html — derive next monthly meet + talks from the latest announcement post.
-     Returns a dict: date, time, venue, entry, register, talks (slice of dicts). */}}
+     Returns a dict: date, time, venue, entry, register, osm, gm, post, talks. */}}
 {{ $meet := "" }}
 {{ $meetPosts := where site.RegularPages "Section" "posts" }}
 {{ $meetPosts = where $meetPosts ".Title" "like" ".*Monthly Meet.*" }}
@@ -11,6 +11,9 @@
 {{ $meetVenue := site.Params.meetup.venue }}
 {{ $meetEntry := site.Params.meetup.entry }}
 {{ $meetRegister := site.Params.meetup.register }}
+{{ $meetOsm := "" }}
+{{ $meetGm := "" }}
+{{ $meetPost := "" }}
 {{ $talks := slice }}
 {{ $months := dict "January" "01" "February" "02" "March" "03" "April" "04" "May" "05" "June" "06" "July" "07" "August" "08" "September" "09" "October" "10" "November" "11" "December" "12" }}
 
@@ -21,7 +24,7 @@
     {{ $dateBits := split $dateStr " " }}
     {{ if ge (len $dateBits) 3 }}
       {{ $mon := index $dateBits 0 }}
-      {{ $day := index $dateBits 1 | strings.TrimSuffix "," }}
+      {{ $day := index $dateBits 1 | strings.TrimSuffix "," | printf "%02s" }}
       {{ $year := index $dateBits 2 }}
       {{ with index $months $mon }}
         {{ $meetDate = printf "%s-%s-%s" $year . $day }}
@@ -36,6 +39,13 @@
   {{ with findRESubmatch `\*\*Place:?\*\*\s*([^\n\\]+)` $body }}
     {{ $meetVenue = strings.TrimSpace (index (index . 0) 1) }}
   {{ end }}
+  {{ with findRESubmatch `\*\*OSM:?\*\*\s*([^\n\\]+)` $body }}
+    {{ $meetOsm = strings.TrimSpace (index (index . 0) 1) }}
+  {{ end }}
+  {{ with findRESubmatch `\*\*GM:?\*\*\s*([^\n\\]+)` $body }}
+    {{ $meetGm = strings.TrimSpace (index (index . 0) 1) }}
+  {{ end }}
+  {{ $meetPost = $meet.RelPermalink }}
 
   {{ range $chunk := split $body "### Talk" }}
     {{ if findRE `\*\*Topic` $chunk }}
@@ -50,4 +60,4 @@
   {{ end }}
 {{ end }}
 
-{{ return (dict "date" $meetDate "time" $meetTime "venue" $meetVenue "entry" $meetEntry "register" $meetRegister "talks" $talks) }}
+{{ return (dict "date" $meetDate "time" $meetTime "venue" $meetVenue "entry" $meetEntry "register" $meetRegister "osm" $meetOsm "gm" $meetGm "post" $meetPost "talks" $talks) }}

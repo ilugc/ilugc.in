@@ -5,6 +5,9 @@
 {{ $meetVenue := $meet.venue }}
 {{ $meetEntry := $meet.entry }}
 {{ $meetRegister := $meet.register }}
+{{ $meetOsm := $meet.osm }}
+{{ $meetGm := $meet.gm }}
+{{ $meetPost := $meet.post }}
 {{ $talks := $meet.talks }}
 
 <div class="wrap">
@@ -66,6 +69,12 @@
       <div class="actions">
         {{ with $meetRegister }}<a href="{{ . }}" class="btn btn-primary">reserve spot →</a>{{ end }}
         {{ with site.Params.channels.meetupCom }}<a href="{{ . }}" class="btn btn-ghost">meetup.com</a>{{ end }}
+        {{ if or $meetOsm $meetGm }}
+          <div class="btn-group" role="group" aria-label="map links">
+            {{ with $meetOsm }}<a href="{{ . }}" class="btn btn-ghost" target="_blank" rel="noopener">OSM ↗</a>{{ end }}
+            {{ with $meetGm }}<a href="{{ . }}" class="btn btn-ghost" target="_blank" rel="noopener">GMaps ↗</a>{{ end }}
+          </div>
+        {{ end }}
         <button class="btn btn-ghost" id="add-calendar"
           {{ with $meetDate }}data-meet-date="{{ . }}"{{ end }}
           {{ with $meetTime }}data-meet-time="{{ . }}"{{ end }}
@@ -74,7 +83,7 @@
       </div>
 
       <div class="foot">
-        {{ with $meetRegister }}<span>→ {{ . }}</span>{{ end }}
+        {{ with $meetPost }}<span><a href="{{ . }}" style="color:var(--accent)">read announcement →</a></span>{{ end }}
         {{ with site.Params.meetup.seatsLeft }}<span>seats: <b>{{ . }}{{ with $.Site.Params.meetup.seatsTotal }} / {{ . }}{{ end }}</b> left</span>{{ end }}
         {{ with site.Params.meetup.meetupCom }}<span>🔗 <a href="{{ . }}" style="color:var(--accent)">meetup.com</a></span>{{ end }}
       </div>
