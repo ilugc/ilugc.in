@@ -16,34 +16,44 @@
     });
   }
 
-  // ---- live countdown to next meetup ----
+  // ---- nav dropdown (keyboard + touch support) ----
+  var toggles = document.querySelectorAll(".dropdown-toggle");
+  for (var i = 0; i < toggles.length; i++) {
+    toggles[i].addEventListener("click", function () {
+      var parent = this.closest("li");
+      var open = parent ? parent.classList.toggle("open") : false;
+      this.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  // ---- live countdown to next meetup (15:00 IST = 09:30 UTC; India has no DST) ----
+  function nextMeetTarget() {
+    var countdown = document.querySelector(".countdown");
+    var raw = countdown ? countdown.getAttribute("data-meet-date") : null;
+    var parts = (raw || "").split("-");
+    if (parts.length === 3) {
+      return Date.UTC(+parts[0], +parts[1] - 1, +parts[2], 9, 30, 0);
+    }
+    // fall back to a reasonable next-meetup: next Saturday at 15:00 IST
+    var d = new Date();
+    var daysToSat = (6 - d.getDay() + 7) % 7;
+    d.setDate(d.getDate() + (daysToSat || 7));
+    return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 9, 30, 0);
+  }
   var meetDate = document.querySelector("[data-countdown-days]");
   if (meetDate) {
-    var countdown = meetDate.closest(".countdown");
-    var raw = countdown ? countdown.getAttribute("data-meet-date") : null;
-    var target;
-    if (raw) {
-      // config date is YYYY-MM-DD; meet is at 15:00 IST
-      var parts = raw.split("-");
-      if (parts.length === 3) {
-        target = new Date(+parts[0], +parts[1] - 1, +parts[2], 15, 0, 0).getTime();
-      }
-    }
-    if (!target) {
-      // fall back to a reasonable next-meetup: next Saturday at 15:00 IST
-      var d = new Date();
-      d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7) || 7);
-      d.setHours(15, 0, 0, 0);
-      target = d.getTime();
-    }
+    var target = nextMeetTarget();
     function pad(n) { return String(n).padStart(2, "0"); }
     function tick() {
       var diff = target - Date.now();
       if (diff < 0) diff = 0;
       meetDate.textContent = pad(Math.floor(diff / 864e5));
-      document.querySelector("[data-countdown-hours]").textContent = pad(Math.floor(diff / 36e5) % 24);
-      document.querySelector("[data-countdown-minutes]").textContent = pad(Math.floor(diff / 6e4) % 60);
-      document.querySelector("[data-countdown-seconds]").textContent = pad(Math.floor(diff / 1e3) % 60);
+      var h = document.querySelector("[data-countdown-hours]");
+      var m = document.querySelector("[data-countdown-minutes]");
+      var s = document.querySelector("[data-countdown-seconds]");
+      if (h) h.textContent = pad(Math.floor(diff / 36e5) % 24);
+      if (m) m.textContent = pad(Math.floor(diff / 6e4) % 60);
+      if (s) s.textContent = pad(Math.floor(diff / 1e3) % 60);
     }
     tick();
     setInterval(tick, 1000);
@@ -57,6 +67,7 @@
     for (var c = 0; c < total; c++) {
       for (var r = 0; r < 7; r++) {
         var cell = document.createElement("div");
+        cell.className = "cell";
         var idx = c - (total - levels.length);
         var level = 0;
         if (idx >= 0 && idx < levels.length) level = levels[idx];
@@ -100,5 +111,6 @@
       a.download = "ilugc-meetup.ics";
       a.click();
       setTimeout(function () { try { URL.revokeObjectURL(a.href); } catch (e2) {} }, 1000);
+    });
   }
 })();

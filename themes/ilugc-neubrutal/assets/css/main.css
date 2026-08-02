@@ -76,8 +76,19 @@ html[data-mode="paper"] .brand .mark { border-color: #000; }
 nav ul { list-style: none; display: flex; gap: 2px; }
 nav ul li { position: relative; }
 nav ul li a { padding: 8px 12px; font-size: 13px; color: var(--muted); }
-nav ul li a:hover, nav ul li a.active { color: var(--ink); background: var(--card); border: 1px solid var(--line); margin: -1px; text-decoration: none; }
-nav ul li:hover .submenu { display: block; }
+nav ul li button.dropdown-toggle {
+  padding: 8px 12px; font-size: 13px; color: var(--muted);
+  background: none; border: 0; cursor: pointer; font-family: inherit;
+}
+nav ul li a:hover, nav ul li a.active,
+nav ul li button.dropdown-toggle:hover,
+nav ul li button.dropdown-toggle[aria-expanded="true"] {
+  color: var(--ink); background: var(--card);
+  border: 1px solid var(--line);
+  margin: -1px; text-decoration: none;
+}
+nav ul li:hover .submenu,
+nav ul li.open .submenu { display: block; }
 .submenu {
   display: none; position: absolute; top: 100%; left: 0; min-width: 170px; z-index: 40;
   background: var(--card); border: 2px solid var(--line); box-shadow: var(--hard);

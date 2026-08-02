@@ -24,7 +24,7 @@
         {{ range .Site.Menus.main }}
           <li>
             {{ if .HasChildren }}
-              <a href="#" class="dropdown-toggle">{{ .Name }}</a>
+              <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">{{ .Name }}</button>
               <div class="submenu">
                 {{ range .Children }}
                   <a href="{{ .URL }}">{{ .Name }}</a>

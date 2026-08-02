@@ -11,7 +11,7 @@ params:
     seatsTotal: 80
     stream: true
   members:
-    count: "400+"
+    count: "400"
     note: "linux · bsd · f/oss enthusiasts"
     since: 1997
   channels:

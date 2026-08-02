@@ -39,7 +39,11 @@
       <div class="actions">
         {{ with .Site.Params.meetup.register }}<a href="{{ . }}" class="btn btn-primary">reserve spot →</a>{{ end }}
         {{ with .Site.Params.channels.meetupCom }}<a href="{{ . }}" class="btn btn-ghost">meetup.com</a>{{ end }}
-        <button class="btn btn-ghost" id="add-calendar">+ add to calendar</button>
+        <button class="btn btn-ghost" id="add-calendar"
+          {{ with .Site.Params.meetup.date }}data-meet-date="{{ . }}"{{ end }}
+          {{ with .Site.Params.meetup.time }}data-meet-time="{{ . }}"{{ end }}
+          {{ with .Site.Params.meetup.venue }}data-meet-venue="{{ . }}"{{ end }}
+          {{ with .Site.Params.meetup.register }}data-meet-register="{{ . }}"{{ end }}>+ add to calendar</button>
       </div>
 
       <div class="foot">
