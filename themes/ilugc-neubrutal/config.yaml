@@ -1,0 +1,29 @@
+params:
+  description: "Indian Linux Users Group Chennai"
+  meetup:
+    date: "2026-08-08"
+    time: "15:00 IST"
+    venue: "IITM, Aerospace Engineering · Room No. 3"
+    entry: "Tell security: \"ILUGC Monthly Meet\""
+    register: "https://register.ilugc.in"
+    meetupCom: "https://www.meetup.com/ilug-c/"
+    seatsLeft: 28
+    seatsTotal: 80
+    stream: true
+  members:
+    count: "400+"
+    note: "linux · bsd · f/oss enthusiasts"
+    since: 1997
+  channels:
+    mailingList: "https://www.freelists.org/list/ilugc"
+    matrix: "https://matrix.to/#/!ODpBuWezMvpKDJmDav:matrix.org"
+    irc: "https://web.libera.chat/?channel=#ilugc"
+    meetupCom: "https://www.meetup.com/ilug-c/"
+  github:
+    repo: "ilugc/ilugc.in"
+    org: "https://github.com/ilugc"
+  accent: "green" # green | cyan
+  defaultMode: "dark" # dark | paper
+  accentSwitcher: true
+  modeSwitcher: true
+  monospace: true

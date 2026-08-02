@@ -1,0 +1,114 @@
+{{ define "main" }}
+<div class="wrap">
+  <div class="bento">
+
+    {{/* ---- HERO: next meetup ---- */}}
+    <div class="card hero">
+      <div class="top">next meetup <b>//</b>
+        {{ with .Site.Params.meetup.date }}{{ . }}{{ end }}</div>
+      <div>
+        {{ $meetMonth := "now" }}
+        {{ with .Site.Params.meetup.date }}
+          {{ $d := time.AsTime . }}
+          {{ $meetMonth = $d.Format "Jan2006" | lower }}
+        {{ end }}
+        <h1>{{ site.Title }} monthly meet<br><em>#{{ $meetMonth }}</em></h1>
+        <p class="tagline">free tech talks · beginner friendly · no corporate fluff, just substance</p>
+      </div>
+
+      {{ with .Content }}
+        <div class="announce">{{ . | plainify }}</div>
+      {{ end }}
+
+      <div class="term">
+        <div><span class="p">ilugc@chennai:~$</span> next-meet --verbose</div>
+        {{ with .Site.Params.meetup.date }}<div><span class="g">date&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with .Site.Params.meetup.time }}<div><span class="g">time&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with .Site.Params.meetup.venue }}<div><span class="g">venue&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with .Site.Params.meetup.entry }}<div><span class="g">entry&nbsp;&nbsp;</span><span class="dim">:</span> <span class="hl">{{ . }}</span></div>{{ end }}
+        <div><span class="p">ilugc@chennai:~$</span> <span class="cursor-blink"></span></div>
+      </div>
+
+      <div class="countdown"{{ with .Site.Params.meetup.date }} data-meet-date="{{ . }}"{{ end }}>
+        <div class="cd"><div class="num" data-countdown-days>--</div><div class="lbl">days</div></div>
+        <div class="cd"><div class="num" data-countdown-hours>--</div><div class="lbl">hrs</div></div>
+        <div class="cd"><div class="num" data-countdown-minutes>--</div><div class="lbl">min</div></div>
+        <div class="cd"><div class="num" data-countdown-seconds>--</div><div class="lbl">sec</div></div>
+      </div>
+
+      <div class="actions">
+        {{ with .Site.Params.meetup.register }}<a href="{{ . }}" class="btn btn-primary">reserve spot →</a>{{ end }}
+        {{ with .Site.Params.channels.meetupCom }}<a href="{{ . }}" class="btn btn-ghost">meetup.com</a>{{ end }}
+        <button class="btn btn-ghost" id="add-calendar">+ add to calendar</button>
+      </div>
+
+      <div class="foot">
+        {{ with .Site.Params.meetup.register }}<span>→ {{ . }}</span>{{ end }}
+        {{ with .Site.Params.meetup.seatsLeft }}<span>seats: <b>{{ . }}{{ with $.Site.Params.meetup.seatsTotal }} / {{ . }}{{ end }}</b> left</span>{{ end }}
+        {{ with .Site.Params.meetup.meetupCom }}<span>🔗 <a href="{{ . }}" style="color:var(--accent)">meetup.com</a></span>{{ end }}
+      </div>
+    </div>
+
+    {{/* ---- MEMBERS ---- */}}
+    <div class="card members">
+      <h3>members</h3>
+      <div class="big">{{ .Site.Params.members.count }}<small>+</small></div>
+      <div class="bar"><i></i></div>
+      <div class="meta">{{ .Site.Params.members.note }}</div>
+      {{ with .Site.Params.members.since }}<div class="meta" style="margin-top:4px">active since <b style="color:var(--accent)">{{ . }}</b></div>{{ end }}
+    </div>
+
+    {{/* ---- CONNECT ---- */}}
+    <div class="card links">
+      <h3>connect</h3>
+      {{ with .Site.Params.channels.mailingList }}<a href="{{ . }}" class="link-row"><span class="ico">✉</span><span>mailing list</span><b>subscribe</b><span class="arr">→</span></a>{{ end }}
+      {{ with .Site.Params.channels.matrix }}<a href="{{ . }}" class="link-row"><span class="ico">◈</span><span>matrix</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
+      {{ with .Site.Params.channels.irc }}<a href="{{ . }}" class="link-row"><span class="ico">#</span><span>irc</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
+      {{ with .Site.Params.github.org }}<a href="{{ . }}" class="link-row"><span class="ico">⌥</span><span>github</span><b>@ilugc</b><span class="arr">→</span></a>{{ end }}
+      <a href="{{ "index.xml" | relURL }}" class="link-row"><span class="ico">∿</span><span>rss feed</span><b>subscribe</b><span class="arr">→</span></a>
+    </div>
+
+    {{/* ---- RECENT MINUTES ---- */}}
+    {{ $minutes := where .Site.RegularPages "Section" "posts" }}
+    {{ $minutes = where $minutes ".Title" "like" ".*[Mm]inutes.*" }}
+    {{ $minutes = sort $minutes "Date" "desc" }}
+    {{ $minutes = first 5 $minutes }}
+    <div class="card minutes">
+      <h3>recent minutes <span class="count">{{ len $minutes }}</span></h3>
+      {{ range $minutes }}
+        <a href="{{ .RelPermalink }}" class="minute">
+          <span class="date">{{ .Date.Format "Jan 2006" }}</span>
+          <span class="title">{{ .Title }}</span>
+          <span class="arrow">→</span>
+        </a>
+      {{ else }}
+        <div class="minute"><span class="title" style="color:var(--muted)">no minutes yet</span></div>
+      {{ end }}
+    </div>
+
+    {{/* ---- GITHUB ---- */}}
+    <div class="card github">
+      <div class="gh-head">
+        <h3 style="margin:0">github</h3>
+        <span class="repo">{{ with .Site.Params.github.repo }}{{ . }}{{ else }}ilugc/ilugc.in{{ end }}</span>
+      </div>
+      <div class="commit-list">
+        {{ $posts := first 4 .Site.RegularPages }}
+        {{ range $i, $p := $posts }}
+          <a href="{{ $p.RelPermalink }}" class="commit">
+            <span class="tick">✓</span>
+            <span class="hash">{{ with $p.File.UniqueID }}{{ substr . 0 7 }}{{ end }}</span>
+            <span class="msg">{{ $p.Title }}</span>
+            <span class="time">{{ $p.Date.Format "jan 2" }}</span>
+          </a>
+        {{ end }}
+      </div>
+      <div class="graph-wrap">
+        <div class="glabel">contribution activity — last 90 days</div>
+        <div class="grid" data-contrib-grid></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ end }}

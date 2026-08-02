@@ -1,0 +1,15 @@
+{{- $manifest := dict
+  "name" site.Title
+  "short_name" (site.Params.shortName | default site.Title)
+  "description" (site.Params.description | default "")
+  "start_url" "/"
+  "display" "standalone"
+  "background_color" "#0a0d11"
+  "theme_color" "#0a0d11"
+  "orientation" "portrait-primary"
+  "lang" (site.Language.LanguageCode | default "en")
+  "dir" "ltr"
+  "scope" "/"
+-}}
+
+{{- $manifest | jsonify (dict "indent" "  ") -}}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="wrap page">
+  <div class="card page-head">
+    <h1># {{ .Title }}</h1>
+    <p class="tagline">{{ len .Pages }} items</p>
+  </div>
+  <div class="post-list">
+    {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="post-item">
+        <div class="row">
+          <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+          <h3>{{ .Title }}</h3>
+        </div>
+        <p>{{ .Summary | plainify | truncate 140 }}</p>
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

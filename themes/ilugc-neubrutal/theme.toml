@@ -1,0 +1,11 @@
+name = "ilugc-neubrutal"
+license = "MIT"
+licenselink = "https://github.com/ilugc/ilugc.in"
+description = "Neubrutalist, terminal-inspired dark theme for ILUGC. Near-black background, one accent (green/cyan), bento grid homepage, JetBrains Mono throughout."
+homepage = "https://ilugc.in"
+tags = ["neubrutalism", "terminal", "dark", "monospace", "bento", "minimal"]
+features = ["bento homepage", "countdown", "contribution graph", "paper/light mode", "accent switcher"]
+min_version = "0.146.0"
+
+[author]
+  name = "ILUGC"

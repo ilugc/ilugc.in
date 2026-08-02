@@ -1,0 +1,26 @@
+<footer>
+  <div class="foot-wrap">
+    <div class="col">
+      <h4>{{ site.Title }}</h4>
+      <ul>
+        <li><a href="{{ "about" | relURL }}">about</a></li>
+        <li><a href="{{ "contact-us" | relURL }}">contact</a></li>
+        <li><a href="{{ "faq" | relURL }}">faq</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>contribute</h4>
+      <ul>
+        <li><a href="{{ "get-involved" | relURL }}">get involved</a></li>
+        <li><a href="{{ "getting-started" | relURL }}">getting started</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>rss</h4>
+      <ul>
+        <li><a href="{{ "index.xml" | relURL }}">feed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">powered by free software <span class="cursor-blink"></span> © {{ now.Year }} {{ site.Title }}</div>
+</footer>

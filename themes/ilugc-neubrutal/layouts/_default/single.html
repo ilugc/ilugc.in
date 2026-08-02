@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="wrap page">
+  <div class="card single">
+    <div class="post-meta">
+      <span>{{ .Date.Format "2006-01-02" }}</span>
+      {{ with .Params.author }}<span>by {{ . }}</span>{{ end }}
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+    <h1>{{ .Title }}</h1>
+    <div class="content">
+      {{ .Content }}
+    </div>
+    {{ with .Params.tags }}
+      <div class="tags">
+        {{ range . }}<span class="tagchip">#{{ . }}</span>{{ end }}
+      </div>
+    {{ end }}
+    <div class="post-nav">
+      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title | truncate 40 }}</a>{{ else }}<span></span>{{ end }}
+      {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title | truncate 40 }} →</a>{{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

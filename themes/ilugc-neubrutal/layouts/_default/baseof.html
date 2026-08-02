@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" data-accent="{{ default "green" site.Params.accent }}" data-mode="{{ default "dark" site.Params.defaultMode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ default site.Params.description .Description }}">
+  <meta name="generator" content="Hugo {{ hugo.Version }}">
+  <link rel="icon" href="{{ "favicon.png" | relURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
+  {{ $css := resources.Get "css/main.css" }}
+  {{ if hugo.IsServer }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ else }}
+    {{ with $css | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+    {{ end }}
+  {{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ $js := resources.Get "js/main.js" }}
+  {{ if hugo.IsServer }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  {{ else }}
+    {{ with $js | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+    {{ end }}
+  {{ end }}
+</body>
+</html>

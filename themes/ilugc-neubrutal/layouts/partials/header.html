@@ -1,0 +1,47 @@
+<div class="topbar">
+  <div class="group">
+    <span class="live"><span class="cursor-blink"></span> active</span>
+    {{ with .Site.Params.meetup.date }}<span>next meet: <b style="color:var(--accent)">{{ . }}</b></span>{{ end }}
+    {{ with .Site.Params.members.since }}<span>est. {{ . }} · chennai, india</span>{{ end }}
+  </div>
+  <div class="group">
+    <span>▼ {{ len .Site.RegularPages }} posts</span>
+    <span>{{ .Site.Title }}</span>
+  </div>
+</div>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">
+      <div class="mark">&gt;_</div>
+      <div>
+        <div class="name"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></div>
+        <div class="sub">indian linux users' group — chennai</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li>
+            {{ if .HasChildren }}
+              <a href="#" class="dropdown-toggle">{{ .Name }}</a>
+              <div class="submenu">
+                {{ range .Children }}
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            {{ else }}
+              <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <button class="btn-small" id="mode-toggle" title="toggle dark/paper mode">▣</button>
+      {{ with .Site.Params.meetup.register }}
+        <a href="{{ . }}" class="btn-small btn-solid">join →</a>
+      {{ end }}
+    </div>
+  </div>
+</header>

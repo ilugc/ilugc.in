@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="wrap page">
+  <div class="card page-head">
+    <h1>{{ .Title }}</h1>
+    <p class="tagline">categories</p>
+  </div>
+  <div class="post-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <a href="{{ .Page.RelPermalink }}" class="post-item">
+        <div class="row">
+          <h3>{{ .Page.Title }}</h3>
+          <span class="date">{{ .Count }}</span>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
