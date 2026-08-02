@@ -21,7 +21,7 @@
       {{ end }}
       <div>
         <div class="name"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></div>
-        <div class="sub">indian linux users' group — chennai</div>
+        <div class="sub">{{ default "indian linux users' group — chennai" site.Params.sub }}</div>
       </div>
     </div>
     <nav>
@@ -43,7 +43,14 @@
       </ul>
     </nav>
     <div class="nav-tools">
-      <button class="btn-small" id="mode-toggle" title="toggle dark/paper mode">▣</button>
+      {{ $accent := default "green" site.Params.accent }}
+      {{ $mode := default "dark" site.Params.defaultMode }}
+      {{ if default true site.Params.accentSwitcher }}
+        <button class="btn-small" id="accent-toggle" title="switch accent color (green / cyan)" aria-pressed="{{ if eq $accent "cyan" }}true{{ else }}false{{ end }}">accent: <b id="accent-label">{{ $accent }}</b></button>
+      {{ end }}
+      {{ if default true site.Params.modeSwitcher }}
+        <button class="btn-small" id="mode-toggle" title="toggle dark / paper mode" aria-pressed="{{ if eq $mode "paper" }}true{{ else }}false{{ end }}">mode: <b id="mode-label">{{ $mode }}</b></button>
+      {{ end }}
       {{ with .Site.Params.meetup.register }}
         <a href="{{ . }}" class="btn-small btn-solid">join →</a>
       {{ end }}

@@ -1,6 +1,9 @@
 params:
   description: "Indian Linux Users Group Chennai"
   logo: "https://ilugc.in/header.jpg"
+  tagline: "free tech talks · beginner friendly · no corporate fluff, just substance"
+  sub: "indian linux users' group — chennai"
+  heroTitle: "monthly meet"
   meetup:
     date: "2026-08-08"
     time: "15:00 IST"

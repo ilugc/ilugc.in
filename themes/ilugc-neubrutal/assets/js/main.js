@@ -4,15 +4,45 @@
 
   // ---- dark / paper mode toggle (persisted) ----
   var root = document.documentElement;
-  var stored = null;
-  try { stored = localStorage.getItem("ilugc-mode"); } catch (e) {}
-  if (stored) root.setAttribute("data-mode", stored);
-  var toggle = document.getElementById("mode-toggle");
-  if (toggle) {
-    toggle.addEventListener("click", function () {
+
+  function setMode(mode) {
+    root.setAttribute("data-mode", mode);
+    var label = document.getElementById("mode-label");
+    var btn = document.getElementById("mode-toggle");
+    if (label) label.textContent = mode;
+    if (btn) btn.setAttribute("aria-pressed", mode === "paper" ? "true" : "false");
+    try { localStorage.setItem("ilugc-mode", mode); } catch (e) {}
+  }
+  try {
+    var stored = localStorage.getItem("ilugc-mode");
+    if (stored === "dark" || stored === "paper") setMode(stored);
+  } catch (e) {}
+  var modeToggle = document.getElementById("mode-toggle");
+  if (modeToggle) {
+    modeToggle.addEventListener("click", function () {
       var next = root.getAttribute("data-mode") === "paper" ? "dark" : "paper";
-      root.setAttribute("data-mode", next);
-      try { localStorage.setItem("ilugc-mode", next); } catch (e) {}
+      setMode(next);
+    });
+  }
+
+  // ---- accent (green / cyan) switcher (persisted) ----
+  function setAccent(accent) {
+    root.setAttribute("data-accent", accent);
+    var label = document.getElementById("accent-label");
+    var btn = document.getElementById("accent-toggle");
+    if (label) label.textContent = accent;
+    if (btn) btn.setAttribute("aria-pressed", accent === "cyan" ? "true" : "false");
+    try { localStorage.setItem("ilugc-accent", accent); } catch (e) {}
+  }
+  try {
+    var storedAccent = localStorage.getItem("ilugc-accent");
+    if (storedAccent === "green" || storedAccent === "cyan") setAccent(storedAccent);
+  } catch (e) {}
+  var accentToggle = document.getElementById("accent-toggle");
+  if (accentToggle) {
+    accentToggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-accent") === "cyan" ? "green" : "cyan";
+      setAccent(next);
     });
   }
 
@@ -59,24 +89,66 @@
     setInterval(tick, 1000);
   }
 
-  // ---- contribution graph (decorative placeholder) ----
+  // ---- contribution graph (real commit activity, falls back to placeholder) ----
   var grid = document.querySelector("[data-contrib-grid]");
   if (grid) {
-    var total = 52;
-    var levels = [0, 0, 0, 1, 1, 2, 3, 1, 0, 2, 3, 3, 2, 0, 1];
-    for (var c = 0; c < total; c++) {
-      for (var r = 0; r < 7; r++) {
-        var cell = document.createElement("div");
-        cell.className = "cell";
-        var idx = c - (total - levels.length);
-        var level = 0;
-        if (idx >= 0 && idx < levels.length) level = levels[idx];
-        if (idx < 0) level = (c * 7 + r) % 11 < 4 ? [0, 1, 2][(c + r) % 3] : 0;
-        if (idx === levels.length - 1 && r === 3) cell.classList.add("today");
-        if (level === 1) cell.classList.add("l1");
-        else if (level === 2) cell.classList.add("l2");
-        else if (level === 3) cell.classList.add("l3");
-        grid.appendChild(cell);
+    var repo = (grid.getAttribute("data-repo") || "ilugc/ilugc.in").replace(/^https?:\/\/github\.com\//, "");
+    var since = new Date();
+    since.setDate(since.getDate() - 90);
+    var api = "https://api.github.com/repos/" + repo + "/commits?per_page=100&since=" + since.toISOString();
+    fetch(api)
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("http " + r.status)); })
+      .then(function (commits) {
+        if (!commits || !commits.length) throw new Error("no commits");
+        var byDay = {};
+        commits.forEach(function (c) {
+          if (!c.commit || !c.commit.author || !c.commit.author.date) return;
+          var d = c.commit.author.date.slice(0, 10);
+          byDay[d] = (byDay[d] || 0) + 1;
+        });
+        renderGrid(byDay);
+      })
+      .catch(function () { renderPlaceholder(); });
+
+    function renderGrid(byDay) {
+      var day = new Date();
+      day.setHours(0, 0, 0, 0);
+      var weeks = 13;
+      var todayKey = day.toISOString().slice(0, 10);
+      for (var c = weeks - 1; c >= 0; c--) {
+        for (var r = 0; r < 7; r++) {
+          var d = new Date(day);
+          d.setDate(d.getDate() - (c * 7) - r);
+          var key = d.toISOString().slice(0, 10);
+          var cell = document.createElement("div");
+          cell.className = "cell";
+          var n = byDay[key] || 0;
+          if (n === 1) cell.classList.add("l1");
+          else if (n >= 2 && n <= 3) cell.classList.add("l2");
+          else if (n >= 4) cell.classList.add("l3");
+          if (key === todayKey) cell.classList.add("today");
+          grid.appendChild(cell);
+        }
+      }
+    }
+
+    function renderPlaceholder() {
+      var total = 52;
+      var levels = [0, 0, 0, 1, 1, 2, 3, 1, 0, 2, 3, 3, 2, 0, 1];
+      for (var c = 0; c < total; c++) {
+        for (var r = 0; r < 7; r++) {
+          var cell = document.createElement("div");
+          cell.className = "cell";
+          var idx = c - (total - levels.length);
+          var level = 0;
+          if (idx >= 0 && idx < levels.length) level = levels[idx];
+          if (idx < 0) level = (c * 7 + r) % 11 < 4 ? [0, 1, 2][(c + r) % 3] : 0;
+          if (idx === levels.length - 1 && r === 3) cell.classList.add("today");
+          if (level === 1) cell.classList.add("l1");
+          else if (level === 2) cell.classList.add("l2");
+          else if (level === 3) cell.classList.add("l3");
+          grid.appendChild(cell);
+        }
       }
     }
   }

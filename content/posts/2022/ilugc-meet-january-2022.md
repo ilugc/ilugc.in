@@ -1,7 +1,7 @@
 ---
 title: ILUGC Monthly Meet - January 08, 2022 - 3.00 PM IST
 date: 2022-01-08T21:14:07+05:30
-url: /ilugc-meet-january-2021
+url: /ilugc-meet-january-2022
 author: Mohan R
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Get involved with ILUGC"
-url: /get-involved
+url: /contribute
 author: Mohan R
 ---
 

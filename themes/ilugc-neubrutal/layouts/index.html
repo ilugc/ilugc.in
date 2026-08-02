@@ -15,7 +15,9 @@
 
     {{/* ---- HERO: next meetup ---- */}}
     <div class="card hero">
-      <div class="top">next meetup <b>//</b> {{ $meetDate }}</div>
+      <div class="top">next meetup <b>//</b>
+        {{ with $meetDate }}{{ with time.AsTime . }}{{ .Format "Jan 2, 2006" }}{{ end }}{{ else }}—{{ end }}
+      </div>
       <div>
         {{ $meetMonth := "" }}
         {{ with $meetDate }}
@@ -23,8 +25,8 @@
             {{ $meetMonth = .Format "Jan2006" | lower }}
           {{ end }}
         {{ end }}
-        <h1>{{ site.Title }} monthly meet<br><em>#{{ $meetMonth }}</em></h1>
-        <p class="tagline">free tech talks · beginner friendly · no corporate fluff, just substance</p>
+        <h1>{{ site.Title }} {{ default "monthly meet" site.Params.heroTitle }}<br><em>#{{ $meetMonth }}</em></h1>
+        <p class="tagline">{{ default "free tech talks · beginner friendly · no corporate fluff, just substance" site.Params.tagline }}</p>
       </div>
 
       {{ with .Content }}
@@ -126,26 +128,50 @@
       {{ end }}
     </div>
 
-    {{/* ---- GITHUB ---- */}}
+    {{/* ---- GITHUB (real commits via GitHub API, falls back to recent posts) ---- */}}
+    {{ $repo := site.Params.github.repo | default "ilugc/ilugc.in" }}
     <div class="card github">
       <div class="gh-head">
         <h3 style="margin:0">github</h3>
-        <span class="repo">{{ with site.Params.github.repo }}{{ . }}{{ else }}ilugc/ilugc.in{{ end }}</span>
+        <span class="repo"><a href="https://github.com/{{ $repo }}" target="_blank" rel="noopener" style="color:var(--accent)">{{ $repo }}</a></span>
       </div>
       <div class="commit-list">
-        {{ $posts := first 4 site.RegularPages }}
-        {{ range $i, $p := $posts }}
-          <a href="{{ $p.RelPermalink }}" class="commit">
-            <span class="tick">✓</span>
-            <span class="hash">{{ with $p.File.UniqueID }}{{ substr . 0 7 }}{{ end }}</span>
-            <span class="msg">{{ $p.Title }}</span>
-            <span class="time">{{ $p.Date.Format "jan 2" }}</span>
-          </a>
+        {{ $commits := slice }}
+        {{ $commitResp := resources.GetRemote (printf "https://api.github.com/repos/%s/commits?per_page=4" $repo) }}
+        {{ with $commitResp }}
+          {{ with . | transform.Unmarshal }}
+            {{ range . }}
+              {{ $sha := .sha | default "" }}
+              {{ with .commit }}
+                {{ $commits = $commits | append (dict "sha" $sha "msg" .message "date" .author.date "url" (printf "https://github.com/%s/commit/%s" $repo $sha)) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if $commits }}
+          {{ range $commits }}
+            <a href="{{ .url }}" class="commit" target="_blank" rel="noopener">
+              <span class="tick">✓</span>
+              <span class="hash">{{ substr .sha 0 7 }}</span>
+              <span class="msg">{{ $firstLine := strings.Split .msg "\n" }}{{ index $firstLine 0 | truncate 40 }}</span>
+              <span class="time">{{ .date | time.AsTime | time.Format "Jan 2" }}</span>
+            </a>
+          {{ end }}
+        {{ else }}
+          {{ $posts := first 4 site.RegularPages }}
+          {{ range $posts }}
+            <a href="{{ .RelPermalink }}" class="commit">
+              <span class="tick">✓</span>
+              <span class="hash">{{ with .File.UniqueID }}{{ substr . 0 7 }}{{ end }}</span>
+              <span class="msg">{{ .Title | truncate 40 }}</span>
+              <span class="time">{{ .Date.Format "Jan 2" }}</span>
+            </a>
+          {{ end }}
         {{ end }}
       </div>
       <div class="graph-wrap">
         <div class="glabel">contribution activity — last 90 days</div>
-        <div class="grid" data-contrib-grid></div>
+        <div class="grid" data-contrib-grid data-repo="{{ $repo }}"></div>
       </div>
     </div>
 
