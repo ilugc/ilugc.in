@@ -75,18 +75,30 @@
   if (cal) {
     cal.addEventListener("click", function (e) {
       e.preventDefault();
-      var start = "20260808T150000", end = "20260808T180000";
+      var rawDate = cal.getAttribute("data-meet-date");
+      var rawTime = cal.getAttribute("data-meet-time") || "15:00";
+      var venue = cal.getAttribute("data-meet-venue") || "";
+      var reg = cal.getAttribute("data-meet-register") || "";
+      var hm = rawTime.match(/(\d{1,2}):(\d{2})/);
+      var parts = (rawDate || "").split("-");
+      if (!hm || parts.length !== 3) return;
+      var y = parts[0], m = parts[1], d = parts[2];
+      var hh = String(hm[1]).padStart(2, "0"), mm = String(hm[2]).padStart(2, "0");
+      var start = y + m + d + "T" + hh + mm + "00";
+      var endH = String((+hm[1] + 3) % 24).padStart(2, "0");
+      var end = y + m + d + "T" + endH + mm + "00";
+      function icsEscape(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;"); }
       var ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//ilugc//meetup//EN",
         "BEGIN:VEVENT", "UID:ilugc-meetup@ilugc.in", "DTSTART;TZID=Asia/Kolkata:" + start,
         "DTEND;TZID=Asia/Kolkata:" + end,
         "SUMMARY:ILUGC Monthly Meet",
-        "LOCATION:IITM, Aerospace Engineering, Room No.3, Chennai",
-        "DESCRIPTION:Register at https://register.ilugc.in", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+        "LOCATION:" + icsEscape(venue),
+        "DESCRIPTION:" + icsEscape(reg ? ("Register at " + reg) : ""), "END:VEVENT", "END:VCALENDAR"].join("\r\n");
       var blob = new Blob([ics], { type: "text/calendar" });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "ilugc-meetup.ics";
       a.click();
-    });
+      setTimeout(function () { try { URL.revokeObjectURL(a.href); } catch (e2) {} }, 1000);
   }
 })();
