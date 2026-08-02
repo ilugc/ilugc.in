@@ -7,7 +7,7 @@
   "background_color" "#0a0d11"
   "theme_color" "#0a0d11"
   "orientation" "portrait-primary"
-  "lang" (site.Language.LanguageCode | default "en")
+  "lang" (site.Language.Locale | default "en")
   "dir" "ltr"
   "scope" "/"
 -}}

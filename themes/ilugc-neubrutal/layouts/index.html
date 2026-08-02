@@ -1,16 +1,24 @@
 {{ define "main" }}
+{{ $meet := partial "nextmeet" . }}
+{{ $meetDate := $meet.date }}
+{{ $meetTime := $meet.time }}
+{{ $meetVenue := $meet.venue }}
+{{ $meetEntry := $meet.entry }}
+{{ $meetRegister := $meet.register }}
+{{ $talks := $meet.talks }}
+
 <div class="wrap">
   <div class="bento">
 
     {{/* ---- HERO: next meetup ---- */}}
     <div class="card hero">
-      <div class="top">next meetup <b>//</b>
-        {{ with .Site.Params.meetup.date }}{{ . }}{{ end }}</div>
+      <div class="top">next meetup <b>//</b> {{ $meetDate }}</div>
       <div>
-        {{ $meetMonth := "now" }}
-        {{ with .Site.Params.meetup.date }}
-          {{ $d := time.AsTime . }}
-          {{ $meetMonth = $d.Format "Jan2006" | lower }}
+        {{ $meetMonth := "" }}
+        {{ with $meetDate }}
+          {{ with time.AsTime . }}
+            {{ $meetMonth = .Format "Jan2006" | lower }}
+          {{ end }}
         {{ end }}
         <h1>{{ site.Title }} monthly meet<br><em>#{{ $meetMonth }}</em></h1>
         <p class="tagline">free tech talks · beginner friendly · no corporate fluff, just substance</p>
@@ -22,58 +30,77 @@
 
       <div class="term">
         <div><span class="p">ilugc@chennai:~$</span> next-meet --verbose</div>
-        {{ with .Site.Params.meetup.date }}<div><span class="g">date&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
-        {{ with .Site.Params.meetup.time }}<div><span class="g">time&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
-        {{ with .Site.Params.meetup.venue }}<div><span class="g">venue&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
-        {{ with .Site.Params.meetup.entry }}<div><span class="g">entry&nbsp;&nbsp;</span><span class="dim">:</span> <span class="hl">{{ . }}</span></div>{{ end }}
+        {{ with $meetDate }}<div><span class="g">date&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with $meetTime }}<div><span class="g">time&nbsp;&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with $meetVenue }}<div><span class="g">venue&nbsp;&nbsp;</span><span class="dim">:</span> {{ . }}</div>{{ end }}
+        {{ with $meetEntry }}<div><span class="g">entry&nbsp;&nbsp;</span><span class="dim">:</span> <span class="hl">{{ . }}</span></div>{{ end }}
         <div><span class="p">ilugc@chennai:~$</span> <span class="cursor-blink"></span></div>
       </div>
 
-      <div class="countdown"{{ with .Site.Params.meetup.date }} data-meet-date="{{ . }}"{{ end }}>
+      <div class="countdown"{{ with $meetDate }} data-meet-date="{{ . }}"{{ end }}>
         <div class="cd"><div class="num" data-countdown-days>--</div><div class="lbl">days</div></div>
         <div class="cd"><div class="num" data-countdown-hours>--</div><div class="lbl">hrs</div></div>
         <div class="cd"><div class="num" data-countdown-minutes>--</div><div class="lbl">min</div></div>
         <div class="cd"><div class="num" data-countdown-seconds>--</div><div class="lbl">sec</div></div>
       </div>
 
+      <div class="talks">
+        <div class="tlabel">// talks</div>
+        {{ if $talks }}
+          {{ range $i, $t := $talks }}
+            <div class="talk">
+              <div class="thead">
+                <span class="tnum">{{ add $i 1 }}</span>
+                <span class="ttopic">{{ $t.topic }}</span>
+                {{ with $t.duration }}<span class="tdur">{{ . }}</span>{{ end }}
+              </div>
+              {{ with $t.desc }}<div class="tdesc">{{ . }}</div>{{ end }}
+              {{ with $t.name }}<div class="tmeta">by <b>{{ . }}</b>{{ with $t.bio }} — {{ . }}{{ end }}</div>{{ end }}
+            </div>
+          {{ end }}
+        {{ else }}
+          <div class="tdesc">talk details will be announced soon.</div>
+        {{ end }}
+      </div>
+
       <div class="actions">
-        {{ with .Site.Params.meetup.register }}<a href="{{ . }}" class="btn btn-primary">reserve spot →</a>{{ end }}
-        {{ with .Site.Params.channels.meetupCom }}<a href="{{ . }}" class="btn btn-ghost">meetup.com</a>{{ end }}
+        {{ with $meetRegister }}<a href="{{ . }}" class="btn btn-primary">reserve spot →</a>{{ end }}
+        {{ with site.Params.channels.meetupCom }}<a href="{{ . }}" class="btn btn-ghost">meetup.com</a>{{ end }}
         <button class="btn btn-ghost" id="add-calendar"
-          {{ with .Site.Params.meetup.date }}data-meet-date="{{ . }}"{{ end }}
-          {{ with .Site.Params.meetup.time }}data-meet-time="{{ . }}"{{ end }}
-          {{ with .Site.Params.meetup.venue }}data-meet-venue="{{ . }}"{{ end }}
-          {{ with .Site.Params.meetup.register }}data-meet-register="{{ . }}"{{ end }}>+ add to calendar</button>
+          {{ with $meetDate }}data-meet-date="{{ . }}"{{ end }}
+          {{ with $meetTime }}data-meet-time="{{ . }}"{{ end }}
+          {{ with $meetVenue }}data-meet-venue="{{ . }}"{{ end }}
+          {{ with $meetRegister }}data-meet-register="{{ . }}"{{ end }}>+ add to calendar</button>
       </div>
 
       <div class="foot">
-        {{ with .Site.Params.meetup.register }}<span>→ {{ . }}</span>{{ end }}
-        {{ with .Site.Params.meetup.seatsLeft }}<span>seats: <b>{{ . }}{{ with $.Site.Params.meetup.seatsTotal }} / {{ . }}{{ end }}</b> left</span>{{ end }}
-        {{ with .Site.Params.meetup.meetupCom }}<span>🔗 <a href="{{ . }}" style="color:var(--accent)">meetup.com</a></span>{{ end }}
+        {{ with $meetRegister }}<span>→ {{ . }}</span>{{ end }}
+        {{ with site.Params.meetup.seatsLeft }}<span>seats: <b>{{ . }}{{ with $.Site.Params.meetup.seatsTotal }} / {{ . }}{{ end }}</b> left</span>{{ end }}
+        {{ with site.Params.meetup.meetupCom }}<span>🔗 <a href="{{ . }}" style="color:var(--accent)">meetup.com</a></span>{{ end }}
       </div>
     </div>
 
     {{/* ---- MEMBERS ---- */}}
     <div class="card members">
       <h3>members</h3>
-      <div class="big">{{ .Site.Params.members.count }}<small>+</small></div>
+      <div class="big">{{ site.Params.members.count }}<small>+</small></div>
       <div class="bar"><i></i></div>
-      <div class="meta">{{ .Site.Params.members.note }}</div>
-      {{ with .Site.Params.members.since }}<div class="meta" style="margin-top:4px">active since <b style="color:var(--accent)">{{ . }}</b></div>{{ end }}
+      <div class="meta">{{ site.Params.members.note }}</div>
+      {{ with site.Params.members.since }}<div class="meta" style="margin-top:4px">active since <b style="color:var(--accent)">{{ . }}</b></div>{{ end }}
     </div>
 
     {{/* ---- CONNECT ---- */}}
     <div class="card links">
       <h3>connect</h3>
-      {{ with .Site.Params.channels.mailingList }}<a href="{{ . }}" class="link-row"><span class="ico">✉</span><span>mailing list</span><b>subscribe</b><span class="arr">→</span></a>{{ end }}
-      {{ with .Site.Params.channels.matrix }}<a href="{{ . }}" class="link-row"><span class="ico">◈</span><span>matrix</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
-      {{ with .Site.Params.channels.irc }}<a href="{{ . }}" class="link-row"><span class="ico">#</span><span>irc</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
-      {{ with .Site.Params.github.org }}<a href="{{ . }}" class="link-row"><span class="ico">⌥</span><span>github</span><b>@ilugc</b><span class="arr">→</span></a>{{ end }}
-      <a href="{{ "index.xml" | relURL }}" class="link-row"><span class="ico">∿</span><span>rss feed</span><b>subscribe</b><span class="arr">→</span></a>
+      {{ with site.Params.channels.mailingList }}<a href="{{ . }}" class="link-row">{{ partial "icon" "mail" }}<span>mailing list</span><b>subscribe</b><span class="arr">→</span></a>{{ end }}
+      {{ with site.Params.channels.matrix }}<a href="{{ . }}" class="link-row">{{ partial "icon" "matrix" }}<span>matrix</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
+      {{ with site.Params.channels.irc }}<a href="{{ . }}" class="link-row">{{ partial "icon" "irc" }}<span>irc</span><b>#ilugc</b><span class="arr">→</span></a>{{ end }}
+      {{ with site.Params.github.org }}<a href="{{ . }}" class="link-row">{{ partial "icon" "github" }}<span>github</span><b>@ilugc</b><span class="arr">→</span></a>{{ end }}
+      <a href="{{ "index.xml" | relURL }}" class="link-row">{{ partial "icon" "rss" }}<span>rss feed</span><b>subscribe</b><span class="arr">→</span></a>
     </div>
 
     {{/* ---- RECENT MINUTES ---- */}}
-    {{ $minutes := where .Site.RegularPages "Section" "posts" }}
+    {{ $minutes := where site.RegularPages "Section" "posts" }}
     {{ $minutes = where $minutes ".Title" "like" ".*[Mm]inutes.*" }}
     {{ $minutes = sort $minutes "Date" "desc" }}
     {{ $minutes = first 5 $minutes }}
@@ -94,10 +121,10 @@
     <div class="card github">
       <div class="gh-head">
         <h3 style="margin:0">github</h3>
-        <span class="repo">{{ with .Site.Params.github.repo }}{{ . }}{{ else }}ilugc/ilugc.in{{ end }}</span>
+        <span class="repo">{{ with site.Params.github.repo }}{{ . }}{{ else }}ilugc/ilugc.in{{ end }}</span>
       </div>
       <div class="commit-list">
-        {{ $posts := first 4 .Site.RegularPages }}
+        {{ $posts := first 4 site.RegularPages }}
         {{ range $i, $p := $posts }}
           <a href="{{ $p.RelPermalink }}" class="commit">
             <span class="tick">✓</span>

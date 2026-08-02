@@ -1,11 +1,11 @@
 en:
-  languageCode: en
-  languageName: "English"
+  locale: en
+  label: "English"
   weight: 1
 
 zh-hans:
-  languageCode: zh-Hans
-  languageName: "简体中文"
+  locale: zh-Hans
+  label: "简体中文"
   weight: 2
 
 # ja:

@@ -1,5 +1,6 @@
 params:
   description: "Indian Linux Users Group Chennai"
+  logo: "https://ilugc.in/header.jpg"
   meetup:
     date: "2026-08-08"
     time: "15:00 IST"

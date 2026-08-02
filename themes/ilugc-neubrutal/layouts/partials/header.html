@@ -1,7 +1,8 @@
 <div class="topbar">
+  {{ $meet := partial "nextmeet" . }}
   <div class="group">
     <span class="live"><span class="cursor-blink"></span> active</span>
-    {{ with .Site.Params.meetup.date }}<span>next meet: <b style="color:var(--accent)">{{ . }}</b></span>{{ end }}
+    {{ with $meet.date }}<span>next meet: <b style="color:var(--accent)">{{ . }}</b></span>{{ end }}
     {{ with .Site.Params.members.since }}<span>est. {{ . }} · chennai, india</span>{{ end }}
   </div>
   <div class="group">
@@ -13,7 +14,11 @@
 <header>
   <div class="nav-wrap">
     <div class="brand">
-      <div class="mark">&gt;_</div>
+      {{ with .Site.Params.logo }}
+        <a href="{{ site.Home.RelPermalink }}" class="logo"><img src="{{ . }}" alt="{{ site.Title }} logo"></a>
+      {{ else }}
+        <div class="mark">&gt;_</div>
+      {{ end }}
       <div>
         <div class="name"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></div>
         <div class="sub">indian linux users' group — chennai</div>
