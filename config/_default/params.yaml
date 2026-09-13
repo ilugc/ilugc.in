@@ -17,7 +17,7 @@ author:
   name: "ILUGC"
   title: "Indian Linux Users Group Chennai"
   # description: ""
-  # avatar: "/logo.png"
+  avatar: "/logo.png"
   social:
     - name: "GitHub"
       url: "https://github.com/ilugc"
