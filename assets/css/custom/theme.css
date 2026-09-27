@@ -43,3 +43,7 @@
   --color-warning: oklch(0.70 0.14 80);
   --color-caution: oklch(0.70 0.14 15);
 }
+
+.author-section img { 
+  object-fit: contain;
+}
