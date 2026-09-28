@@ -18,7 +18,7 @@ Here is the quick recap of what happend in ILUGC Monthly meet, September 12, 202
 - Matchers & Refactoring: Clang AST Matchers let you find specific code patterns and safely transform them.
 - Why not Regex or IR? Regrex only sees text and can't reliably understand C/C++ syntax; IR is lower-level and loses important source-level details.
 
-![Talk 0](/images/20260912-talk0.jpg)
+![Talk 0](/images/20260912-talk1.jpeg)
 
 ### Talk 1 - The Nix Philosophy 
 
@@ -26,7 +26,7 @@ Here is the quick recap of what happend in ILUGC Monthly meet, September 12, 202
 - The basics of nixos and the nix way of doing things.
 - The talk also featured my NixOS setup. 
 
-![Talk 1](/images/20260912-talk1.jpg)
+![Talk 1](/images/20260912-talk0.jpeg)
 
 
 
@@ -34,4 +34,4 @@ Here is the quick recap of what happend in ILUGC Monthly meet, September 12, 202
 
 - They discussion revolved around the larger implications of Linux & Nix
 
-![Group](/images/20260912-group.jpg)
+![Group](/images/20260912-group.jpeg)
