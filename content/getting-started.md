@@ -90,6 +90,7 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [Tamil Linux Community](https://forums.tamillinuxcommunity.org/)
 * [Villupuram GLUG](https://vglug.org/)
 * [KanchiLUG](https://kanchilug.wordpress.com/)
+* [Cuddalore GLUG](https://cuddaloreglug.wordpress.com/)
 
 ### FOSS Organizations in India
 
@@ -99,6 +100,8 @@ GNU/Linux being the snowballing phenomenon it is, there are literally a billion 
 * [Public-Software India](https://www.public-software.in/)
 * [FOSS Community India](https://fci.wikia.com/wiki/Main_Page)
 * [FSMI](https://fsmi.in/)
+* [FSHM-Pondicherry](https://fshm.org/)
+* [FSFTN](https://fsftn.org/)
 
 
 ### Other ILUG’s
