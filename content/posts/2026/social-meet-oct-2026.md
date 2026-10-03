@@ -11,7 +11,7 @@ A Mapping Party is a fun and interactive event where participants can learn abou
 
 Even Link : https://osmcal.org/event/5289/
 
-🗓️ **Date:** Saturday, 04th of October \
+🗓️ **Date:** Sunday, 04th of October \
 🕙 **Time:** 5 PM to 7 PM \
 📌 **Location:** Vijaya Nagar, Velachery, Chennai \
 **OSM:** https://osmand.net/map/?pin=12.974180,80.217660#17.13/12.97418/80.21766
